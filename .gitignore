@@ -1,0 +1,17 @@
+# General
+log/
+*.log
+# Node
+npm-debug.log
+# Mac
+.DS_Store
+# Windows
+Thumbs.db
+# vi 
+*~
+# JetBrains (Webstorm, IntelliJ...)
+.idea
+# Local Properties (like android sdk version)
+local.properties
+# Node modules
+node_modules
