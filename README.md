@@ -18,13 +18,18 @@ Start appen ved å kjøre `npm install` og deretter `npm start`.
 - Lage størrelsesobjekt for knapp
 
 ### Oppgave 1 - Lag din første Styled Component
-Trekk ut h1 til ein styla komponent. Den kan få bu i same fila.
-Style heading:
- 3rem, bold, sentrert, bølgete understrek
+Du skal style oversikrifta på sida. Trekk ut `h1` til ein Styled Component i same fil.
 
+Vi vil ha følgande styling: 
+- tekststorleik 3rem
+- feit tekst (bold)
+- bølgete understrek
 
+<details>
+<summary>Hint</summary>
 hint: text-decoration-style
 https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style
+</details>
 
 
 
