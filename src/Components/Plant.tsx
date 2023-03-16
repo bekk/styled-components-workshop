@@ -1,11 +1,16 @@
-export const Plant = () => {
+import { Plant as PlantType } from "../Data/Plants"
+
+interface Props {
+    plant: PlantType;
+}
+
+export const Plant = ({ plant }: Props) => {
     return (
         <a href="#">
-            <div>Bilde</div>
-            <h2>Monstera</h2>
+            <div><img src={plant.imageUrl} alt=""/></div>
+            <h2>{plant.name}</h2>
             <p>
-                Denne planten er også kjent som vindusblad, men visste du at
-                frukten er spiselig?...
+                {plant.description}
             </p>
         </a>
     );
