@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Oppgaver } from "./Oppgaver";
+import { Oppgaver } from "./Oppgaver/Oppgaver";
 import styled from "styled-components";
 
 const Container = styled.div`

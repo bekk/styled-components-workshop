@@ -1,6 +1,8 @@
 import React from "react";
-import { Plant } from "./Components/Plant";
-import { plants } from "./Data/Plants";
+import { Plant } from "../Components/Plant";
+import { plants } from "../Data/Plants";
+import styled from "styled-components";
+
 
 export const Oppgaver = () => {
     return (
