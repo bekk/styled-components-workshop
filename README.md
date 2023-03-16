@@ -13,9 +13,18 @@ Start appen ved å kjøre `npm install` og deretter `npm start`.
 
 ### Oppgave 0
 (Ting Ingrid og Anne Line skal gjere)
-- Style "skallet" av sida (midstill og sett breidda til sånn 60rem eller noko)
-- Lage Button, den skal ha default-size="medium"
-- Lage størrelsesobjekt for knapp
+2023-03-16
+Startpunkt til neste gong
+- Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
+- Leggje inn breakpoints i ei fil
+- Lage fasit for oppgåve 2c
+
+
+- _Style "skallet" av sida (midstill og sett breidda til sånn 60rem eller noko)_
+- _Lage Button, den skal ha default-size="medium"_
+- _Lage størrelsesobjekt for knapp_
+- _Grunnstyling for Card_
+
 
 ### Oppgave 1 - Lag din første Styled Component
 Du skal style oversikrifta på sida. Trekk ut `h1` til ein Styled Component i same fil.
