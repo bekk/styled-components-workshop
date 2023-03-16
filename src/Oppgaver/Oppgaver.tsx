@@ -9,6 +9,7 @@ export const Oppgaver = () => {
         <>
             <header>
                 <h1>Plant World</h1>
+
             </header>
             {
                 plants.map(plant => <Plant plant={plant} />)

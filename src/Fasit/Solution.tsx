@@ -1,5 +1,5 @@
 import { Task1 } from "./Task1";
-import { Task2a } from "./Task2";
+import { Task2a } from "./Task2a";
 
 
 export const Solution = () => {
