@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "./App.css";
 import { Oppgaver } from "./Oppgaver/Oppgaver";
+
 import { Solution } from "./Fasit/Løsning_oppg1";
 
 const Container = styled.div`
@@ -13,12 +14,15 @@ function App() {
 
     return (
         <div className="App">
-            <input id="showSolution" type="checkbox" checked={showSolution} onChange={() => setShowSolution(prevState => !prevState)} />
+            <input
+                id="showSolution"
+                type="checkbox"
+                checked={showSolution}
+                onChange={() => setShowSolution((prevState) => !prevState)}
+            />
             <label htmlFor="showSolution">Vis fasit</label>
-            {showSolution
-                ? <Solution />
-                : <Oppgaver />
-            }
+            {showSolution ? <Solution /> : <Oppgaver />}
+            Stashed changes
         </div>
     );
 }
