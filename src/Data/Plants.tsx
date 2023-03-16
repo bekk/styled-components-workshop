@@ -1,8 +1,15 @@
-export const plants = [
+interface Plant {
+    id: number;
+    name: string;
+    description: string;
+    careInstructions: string[];
+    imageUrl: string;
+}
+
+export const plants: Plant[] = [
     {
         id: 1,
         name: "Monstera Deliciosa",
-        image: require("./images/monstera.jpg"),
         description:
             "The Monstera Deliciosa is a popular houseplant known for its large, glossy leaves. It is native to the rainforests of Central and South America.",
         careInstructions: [
@@ -16,7 +23,6 @@ export const plants = [
     {
         id: 2,
         name: "Snake Plant",
-        image: require("./images/snake_plant.jpg"),
         description:
             "The Snake Plant, also known as Sansevieria, is a hardy and low-maintenance plant that can thrive in a variety of conditions. It is native to West Africa.",
         careInstructions: [
@@ -30,7 +36,6 @@ export const plants = [
     {
         id: 3,
         name: "Fiddle Leaf Fig",
-        image: require("./images/fiddle_leaf_fig.jpg"),
         description:
             "The Fiddle Leaf Fig is a popular houseplant known for its large, violin-shaped leaves. It is native to tropical regions of Africa.",
         careInstructions: [
@@ -44,7 +49,6 @@ export const plants = [
     {
         id: 4,
         name: "Pothos",
-        image: require("./images/pothos.jpg"),
         description:
             "The Pothos is a trailing vine plant that is easy to care for and can grow well in a variety of lighting conditions. It is native to the Solomon Islands.",
         careInstructions: [
@@ -59,7 +63,6 @@ export const plants = [
     {
         id: 5,
         name: "Spider Plant",
-        image: require("./images/spider_plant.jpg"),
         description:
             "The Spider Plant is a popular houseplant known for its long, thin leaves and small white flowers. It is native to tropical and southern Africa.",
         careInstructions: [
@@ -73,7 +76,6 @@ export const plants = [
     {
         id: 6,
         name: "ZZ Plant",
-        image: require("./images/zz_plant.jpg"),
         description:
             "The ZZ Plant is a low-maintenance houseplant that can grow well in low light conditions. It is native to Eastern Africa.",
         careInstructions: [
