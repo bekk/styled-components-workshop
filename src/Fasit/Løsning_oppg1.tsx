@@ -4,11 +4,11 @@ import { plants } from "../Data/Plants";
 import styled from "styled-components";
 
 
-export const Oppgaver = () => {
+export const Solution = () => {
     return (
         <>
             <header>
-                <h1>Plant World</h1>
+                <h1>Plant World (Solution)</h1>
             </header>
             {
                 plants.map(plant => <Plant plant={plant} />)
