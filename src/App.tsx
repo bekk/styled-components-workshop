@@ -1,14 +1,11 @@
 import React from "react";
 import "./App.css";
-import { Plant } from "./Components/Plant";
+import { Oppgaver } from "./Oppgaver";
 
 function App() {
     return (
         <div className="App">
-            <header>
-                <h1>Alt om planter</h1>
-            </header>
-            <Plant />
+            <Oppgaver />
         </div>
     );
 }
