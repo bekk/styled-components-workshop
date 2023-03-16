@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import "./App.css";
 import { Oppgaver } from "./Oppgaver/Oppgaver";
-
-import { Solution } from "./Fasit/Løsning_oppg1";
+import { Solution } from "./Fasit/Solution";
 
 const Container = styled.div`
     // TODO add base styling here
