@@ -12,7 +12,7 @@ function App() {
     const [showSolution, setShowSolution] = useState(true); // TODO bytt denne til false før workshop
 
     return (
-        <div className="App">
+        <Container className="App">
             <input
                 id="showSolution"
                 type="checkbox"
@@ -22,7 +22,7 @@ function App() {
             <label htmlFor="showSolution">Vis fasit</label>
             {showSolution ? <Solution /> : <Oppgaver />}
             Stashed changes
-        </div>
+        </Container>
     );
 }
 
