@@ -16,7 +16,12 @@ Start appen ved å kjøre `npm install` og deretter `npm start`.
 2023-03-16
 Startpunkt til neste gong
 - Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
+<<<<<<< Updated upstream
 - Lage fasit for oppgåve 2c
+=======
+- Leggje inn breakpoints i ei fil
+- Lage fasit for oppgåve 2c 
+>>>>>>> Stashed changes
 
 - Lage nav-bar-komponent som ein kan style ???
 - _Lage Button, den skal ha default-size="medium"_
