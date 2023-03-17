@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { plants } from "../Data/Plants";
-import { Plant } from "../Components/Plant";
+import { Plants } from "../Components/Plants";
 
 const Heading = styled.h1`
   font-size: 3rem;
@@ -15,9 +14,7 @@ export const Task1 = () => {
             <header>
                 <Heading>Plant World (Solution)</Heading>
             </header>
-            {plants.map((plant) => (
-                <Plant plant={plant} />
-            ))}
+            <Plants />
         </>
     );
 };
