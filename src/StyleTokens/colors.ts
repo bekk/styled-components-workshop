@@ -1,5 +1,6 @@
 // Colors from https://tailwindcss.com/docs/customizing-colors
 export enum COLORS {
+    WHITE = "#ffffff",
     GRAY_050 = "#fafafa",
     GRAY_100 = "#f5f5f5",
     GRAY_200 = "#e5e5e5",
