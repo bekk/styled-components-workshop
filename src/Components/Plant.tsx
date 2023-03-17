@@ -18,7 +18,7 @@ interface Props {
     backgroundColor?: COLORS;
 }
 
-export const Plant = ({ plant, backgroundColor }: Props) => {
+export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
     return (
         <Card href={`#${plant.name}`}>
             <h2>{plant.name}</h2>
@@ -29,3 +29,5 @@ export const Plant = ({ plant, backgroundColor }: Props) => {
         </Card>
     );
 };
+
+//Todo lage en funksjon som gjør oddetallkort grønne 
