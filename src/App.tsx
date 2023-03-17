@@ -3,9 +3,10 @@ import styled from "styled-components";
 import "./App.css";
 import { Oppgaver } from "./Oppgaver/Oppgaver";
 import { Solution } from "./Fasit/Solution";
+import { COLORS } from "./StyleTokens/colors";
 
 const Container = styled.div`
-    // TODO add base styling here
+  background: ${COLORS.GRAY_050};
 `;
 
 function App() {
