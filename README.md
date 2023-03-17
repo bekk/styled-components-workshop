@@ -16,14 +16,11 @@ Start appen ved å kjøre `npm install` og deretter `npm start`.
 2023-03-16
 Startpunkt til neste gong
 - Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
-- Leggje inn breakpoints i ei fil
 - Lage fasit for oppgåve 2c
 
-
-- _Style "skallet" av sida (midstill og sett breidda til sånn 60rem eller noko)_
+- Lage nav-bar-komponent som ein kan style ???
 - _Lage Button, den skal ha default-size="medium"_
 - _Lage størrelsesobjekt for knapp_
-- _Grunnstyling for Card_
 
 
 ### Oppgave 1 - Lag din første Styled Component
@@ -75,13 +72,22 @@ b)
 ```
 
 c) Media queries
-```
-`
-  @media (min-width: ${mobileBreakpoint}) {
-    // Mindre padding rundt alt innhald
-  }
-`
-```
+Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil mindre enn tablet, og 3 rem på alt frå tablet og opp.
+
+Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
+
+<details>
+<summary>Hint</summary>
+(@media...) og template strings
+</details>
+
+<details>
+<summary>Hint</summary>
+Tablet-and-up
+Den fancy enkle måten å gjere det på
+</details>
+
+
 
 d) Idé: Media queries + flexbox
 
