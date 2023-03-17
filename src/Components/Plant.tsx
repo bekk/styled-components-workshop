@@ -20,7 +20,7 @@ interface Props {
 
 export const Plant = ({ plant }: Props) => {
     return (
-        <Card href="#">
+        <Card href={`#${plant.name}`}>
             <h2>{plant.name}</h2>
             <div><img src={plant.imageUrl} alt="" /></div>
             <p>
