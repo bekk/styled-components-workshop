@@ -5,7 +5,6 @@ Dette er en workshop for deg som vil lære Styled Components rammeverket for Rea
 Styled Components dokumentasjon som du kan lese: https://styled-components.com/
 
 ## Starte applikasjonen
-
 Last ned repoet ved å kjøre kommandoen:  
  `git clone https://github.com/bekk/styled-components-workshop/` i terminalen.  
 Naviger til root-folderen ved å kjøre cd styled-components-workshop.
@@ -17,13 +16,20 @@ Start appen ved å kjøre `npm install` og deretter `npm start`.
 (Ting Ingrid og Anne Line skal gjere)
 2023-03-16
 Startpunkt til neste gong
+- Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
 
--   Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
--   Lage fasit for oppgåve 2c
+-   Gjer at annakvart plante-kort får lime-bakgrunn
+- lage fasit for 3b
+- lag Button-komponent og oppgåve 4
+- bytt plass på oppg. 4 og 5
+- lag komponent som kan stylast i oppg "5" (like-knapp, så kan dei overskrive fargen)
+- Anne Line startar på presentasjon
 
--   Lage nav-bar-komponent som ein kan style ???
--   _Lage Button, den skal ha default-size="medium"_
--   _Lage størrelsesobjekt for knapp_
+- Gjer det mogleg å vise fasit på oppgåve 3
+- Skrive inn hint i readme
+- Lage nav-bar-komponent som ein kan style ???
+- _Lage Button, den skal ha default-size="medium"_
+- _Lage størrelsesobjekt for knapp_
 
 ### Oppgave 1 - Lag din første Styled Component
 
@@ -90,11 +96,11 @@ Tablet-and-up
 Den fancy enkle måten å gjere det på
 </details>
 
-d) Idé: Media queries + flexbox
-
 ### Oppgave 3 - Ta inn props i komponent (Button)
 
 a)
+Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
+
 
 ```
 const Something =styled.div<{size: string}>`
@@ -102,10 +108,14 @@ const Something =styled.div<{size: string}>`
 `
 ```
 
-b) Ta inn farge også (background)
+<details>
+<summary>Hint</summary>
 
-c) Skjul barn når størrelsen er "small"
-(For eksempel Icon)
+</details>
+
+
+b) Skjul beskrivelsen 
+Mål: lære "hvis something vis dette else noko anna"
 
 ### Oppgave 4 - Ta inn props frå objekt
 
