@@ -13,7 +13,7 @@ export const Plants = () => {
     return (
         <Container>
             {
-                plants.map(plant => <Plant plant={plant} />)
+                plants.map(plant => <Plant plant={plant} key={plant.id}/>)
             }
         </Container>
     )
