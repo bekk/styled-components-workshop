@@ -5,11 +5,13 @@ import { BORDER_RADIUS } from "../StyleTokens/borderRadius";
 import { COLORS } from "../StyleTokens/colors";
 
 const Card = styled.a`
-  display: block;
-  width: 600px;
+  flex: 1 10rem;
+  max-width: 50rem;
   background: ${COLORS.WHITE};
   box-shadow: ${SHADOW.SMALL};
-  border-radius: ${BORDER_RADIUS.LARGE};
+  border-radius: ${BORDER_RADIUS.XLARGE};
+  
+  padding: 32px;
 `;
 
 interface Props {
