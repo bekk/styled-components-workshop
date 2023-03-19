@@ -6,16 +6,16 @@ import { Solution } from "./Fasit/Solution";
 import { COLORS } from "./StyleTokens/colors";
 
 const Container = styled.div`
-  background: ${COLORS.GRAY_050};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  padding: 0.5rem;
+    background: ${COLORS.GRAY_050};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.5rem;
 `;
 
-const ShowSolutionChecxbox=styled.div`
-  align-self: end;
+const ShowSolutionChecxbox = styled.div`
+    align-self: end;
 `;
 
 function App() {
@@ -33,7 +33,6 @@ function App() {
                 <label htmlFor="showSolution">Vis fasit</label>
             </ShowSolutionChecxbox>
             {showSolution ? <Solution /> : <Oppgaver />}
-            Stashed changes
         </Container>
     );
 }

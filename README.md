@@ -17,8 +17,6 @@ Start appen ved å kjøre `npm install` og deretter `npm start`.
 2023-03-16
 Startpunkt til neste gong
 - Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
-
--   Gjer at annakvart plante-kort får lime-bakgrunn
 - lage fasit for 3b
 - lag Button-komponent og oppgåve 4
 - bytt plass på oppg. 4 og 5

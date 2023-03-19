@@ -30,4 +30,3 @@ export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
     );
 };
 
-//Todo lage en funksjon som gjør oddetallkort grønne 
