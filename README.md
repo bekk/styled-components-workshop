@@ -12,31 +12,14 @@ Naviger til root-folderen ved å kjøre cd styled-components-workshop.
 Start appen ved å kjøre `npm install` og deretter `npm start`.  
 Åpne koden i din favoritteditor, naviger til src/App og følg instruksjonene derifra!
 
-### Oppgave 0
-
-(Ting Ingrid og Anne Line skal gjere)
-2023-03-16
-Startpunkt til neste gong
-
-Må/Bør
--   Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
--   lag Button-komponent og oppgåve 4
--   bytt plass på oppg. 4 og 5
--   Skrive inn hint i readme
--   Lage nav-bar-komponent som ein kan style ???
--   Lage fasit for oppg. 5 (style eksisterande komponent)
-
-Kan
--   _Lage Button, den skal ha default-size="medium"_
--   _Lage størrelsesobjekt for knapp_
-
-
 
 <details>
 <summary>Hint</summary>
 
 
 </details>
+
+## Oppgaver
 
 ### Oppgave 1 - Lag din første Styled Component
 
@@ -48,27 +31,42 @@ Vi vil ha følgande styling:
 -   feit tekst (bold)
 -   bølgete understrek
 
+<br>
 <details>
-<summary>Hint</summary>
-hint: text-decoration-style
-https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style
+<summary>Hint 1</summary>
+
+For å style understrek sjå: [text-decoration-style](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
+
 </details>
+
+<br>
+<details>
+<summary>Hint 2</summary>
 
 ```
 styled.h1`
-
+  // styling her
 
 `;
 ```
+
+</details>
+
 
 ### Oppgave 2 - Selectorer
 
  a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
 
+
 <details>
-<summary>Hint</summary>
-hint: `:hover`
+<summary>Hint 1</summary>
+ // TODO skriv om nøsting
+
 </details>
+
+<br>
+<details>
+<summary>Hint 2</summary>
 
 ```
 `
@@ -79,18 +77,10 @@ hint: `:hover`
 
 ```
 
- b)
+</details>
 
-```
-`
-  p { // eller eit anna barn
-    // Finn på noe bra
-  }
-`
 
-```
-
-c) Media queries
+b) Media queries
 Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil mindre enn tablet, og 3 rem på alt frå tablet og opp.
 Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
 
@@ -104,6 +94,7 @@ Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
 Tablet-and-up
 Den fancy enkle måten å gjere det på
 </details>
+
 
 ### Oppgave 3 - Ta inn props i komponent
 
@@ -179,10 +170,12 @@ const SomeComponent = styled(Component)`
  <details>
 <summary>Hint</summary>
   Wrappe knappen med en ThemeProvider
+
 ```
-<ThemeProvider>
-`
+<ThemeProvider></ThemeProvider>
+
 ```
+
 </details>
 
 
