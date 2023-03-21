@@ -6,7 +6,7 @@ const Heading = styled.h1`
     text-decoration-line: underline;
     text-decoration-style: wavy;
 `;
-export const Task3 = () => {
+export const Task3a = () => {
     return (
         <>
             <header>
