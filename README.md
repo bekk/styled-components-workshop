@@ -55,7 +55,7 @@ styled.h1`
 
 ### Oppgave 2 - Selectorer
 
- a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
+ a) Vi vil at når du peiker på overskrifta så retter understreken seg ut  
 
 
 <details>
@@ -80,15 +80,17 @@ styled.h1`
 </details>
 
 
-b) Media queries
+b) Media queries  
 Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil mindre enn tablet, og 3 rem på alt frå tablet og opp.
 Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
 
+<br>
 <details>
 <summary>Hint</summary>
 (@media...) og template strings
 </details>
 
+<br>
 <details>
 <summary>Hint</summary>
 Tablet-and-up
@@ -100,31 +102,46 @@ Den fancy enkle måten å gjere det på
 
 a) Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
 
+Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?
+
+<br>
 <details>
 <summary>Hint</summary>
+
 ```
 const Something =styled.div<{size: string}>`
   width: ${(props) => props.size}rem;
 `
 ```
-</details>
- 
-### Oppgave 4 - Ta inn props frå objekt
- a) I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med vit bakgrunn.
 
+</details>
+
+b) I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med vit bakgrunn.
+
+<br>
 <details>
 <summary>Hint</summary>
-I styleTokens kan du sende in variants som en prop til Button- komponentem.
+
+I styleTokens kan du sende in variants som en prop til Button- komponenten.
+
 </details>
  
-b) Vi har laga eit objekt med styling for 3 størrelser. (padding, font-size)
-Send inn ein storleik basert på input i komponenten
-Bruk verdier i objektet der dei skal endre ting.
+### Oppgave 4 - Theme
 
-c) Designsystemet har blitt oppdatert og fra nå av skal vi ha ulik border-radius på ulike størrelser.
-small: 4px
-medium: 4px
-large: 8px
+b) Ta i bruk Theme
+
+ <details>
+<summary>Hint</summary>
+  Wrappe knappen med en ThemeProvider
+
+```
+<ThemeProvider></ThemeProvider>
+
+```
+
+</details>
+
+
 
 ### Oppgave 5 - Style en eksisterende komponent
 
@@ -165,18 +182,6 @@ const SomeComponent = styled(Component)`
 </details>
 
 
-5 b) Ta i bruk Theme
-
- <details>
-<summary>Hint</summary>
-  Wrappe knappen med en ThemeProvider
-
-```
-<ThemeProvider></ThemeProvider>
-
-```
-
-</details>
 
 
 ### Oppgave n - Deleknapp revisited
