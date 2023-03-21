@@ -94,7 +94,7 @@ Tablet-and-up
 Den fancy enkle måten å gjere det på
 </details>
 
-### Oppgave 3 - Ta inn props i komponent (Button)
+### Oppgave 3 - Ta inn props i komponent
 
 a)
 Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
