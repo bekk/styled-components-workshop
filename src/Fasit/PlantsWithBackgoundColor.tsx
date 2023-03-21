@@ -4,6 +4,7 @@ import { BORDER_RADIUS } from "../StyleTokens/borderRadius";
 import { COLORS } from "../StyleTokens/colors";
 import { SHADOW } from "../StyleTokens/shadow";
 import { Plant as PlantType } from "../Data/Plants";
+import { LikeButton } from "../Components/HeartButton";
 
 const Container = styled.div`
     display: flex;
@@ -32,6 +33,7 @@ export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
             <div>
                 <img src={plant.imageUrl} alt="" />
             </div>
+            <LikeButton />
             <p>{plant.description}</p>
         </Card>
     );

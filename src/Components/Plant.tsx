@@ -3,6 +3,7 @@ import { Plant as PlantType } from "../Data/Plants";
 import { SHADOW } from "../StyleTokens/shadow";
 import { BORDER_RADIUS } from "../StyleTokens/borderRadius";
 import { COLORS } from "../StyleTokens/colors";
+import { LikeButton } from "./HeartButton";
 
 const Card = styled.a`
     flex: 1 10rem;
@@ -25,8 +26,8 @@ export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
             <div>
                 <img src={plant.imageUrl} alt="" />
             </div>
+            <LikeButton />
             <p>{plant.description}</p>
         </Card>
     );
 };
-
