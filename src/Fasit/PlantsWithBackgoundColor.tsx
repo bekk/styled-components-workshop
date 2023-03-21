@@ -38,7 +38,7 @@ export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
         </Card>
     );
 };
-export const Plants = () => {
+export const PlantsWithBackgoundColor = () => {
     return (
         <Container>
             {plants.map((plant) => (
