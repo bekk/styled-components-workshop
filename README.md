@@ -27,6 +27,14 @@ Startpunkt til neste gong
 -   _Lage Button, den skal ha default-size="medium"_
 -   _Lage størrelsesobjekt for knapp_
 
+
+
+<details>
+<summary>Hint</summary>
+
+
+</details>
+
 ### Oppgave 1 - Lag din første Styled Component
 
 Du skal style oversikrifta på sida. Trekk ut `h1` til ein Styled Component i same fil.
@@ -126,17 +134,44 @@ large: 8px
 
 ### Oppgave 5 - Style en eksisterende komponent
 
-Det finst ein Button allereie. Vi har lyst på ein deleknapp som skal vere [annan farge].Lag ein styled component som wrapper den eksisterende komponenten Button.
+På plantekorta våre har vi ein "like"-knapp forma som eit hjarte (`LikeButton.tsx`). Vi vil at denne skal vere grøn på plantekorta våre (`Plant.tsx`), men den skal framleis vere raud om ein bruker den andre stadar. 
+
+Denne oppgåva skal løysast utan å endre koden i `LikeButton`.
+
 
 <details>
 <summary>Hint</summary>
-```
-styled(EksisterendeKomponent)`
-`
-```
+Lag ein styled component som wrappar `LikeButton`
+</details>  
+
+<br>
+
+<details>
+<summary>Hint 2</summary>
+
+`styled.div` er ein forenkla måte å skrive `styled('div')` på. 'div' representerar html-elementet div slik <div> gjer det i JSX. 
+
 </details>
- 
- b) Ta i bruk Theme
+
+<br>
+
+<details>
+<summary>Hint 3</summary>
+
+```
+import Component from 'componentLocation/component'
+
+const SomeComponent = styled(Component)`
+  // styling here
+`;
+```
+
+(Hugs at du må bytte ut den "ustyla" komponenten med den nye du har laga)
+
+</details>
+
+
+5 b) Ta i bruk Theme
 
  <details>
 <summary>Hint</summary>
@@ -146,7 +181,7 @@ styled(EksisterendeKomponent)`
 `
 ```
 </details>
- 
+
 
 ### Oppgave n - Deleknapp revisited
 
