@@ -52,7 +52,8 @@ styled.h1`
 
 ### Oppgave 2 - Selectorer
 
-#### a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
+#### a)
+Vi vil at når du peiker på overskrifta så retter understreken seg ut
 
 hint: `:hover`
 
