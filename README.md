@@ -18,12 +18,15 @@ Start appen ved å kjøre `npm install` og deretter `npm start`.
 2023-03-16
 Startpunkt til neste gong
 
+Må/Bør
 -   Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
 -   lag Button-komponent og oppgåve 4
 -   bytt plass på oppg. 4 og 5
--   lag komponent som kan stylast i oppg "5" (like-knapp, så kan dei overskrive fargen)
 -   Skrive inn hint i readme
 -   Lage nav-bar-komponent som ein kan style ???
+-   Lage fasit for oppg. 5 (style eksisterande komponent)
+
+Kan
 -   _Lage Button, den skal ha default-size="medium"_
 -   _Lage størrelsesobjekt for knapp_
 
