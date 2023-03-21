@@ -52,7 +52,7 @@ styled.h1`
 
 ### Oppgave 2 - Selectorer
 
-a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
+#### a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
 
 hint: `:hover`
 
@@ -65,7 +65,7 @@ hint: `:hover`
 
 ```
 
-b)
+#### b)
 
 ```
 `
@@ -76,9 +76,8 @@ b)
 
 ```
 
-c) Media queries
+#### c) Media queries
 Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil mindre enn tablet, og 3 rem på alt frå tablet og opp.
-
 Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
 
 <details>
@@ -94,30 +93,30 @@ Den fancy enkle måten å gjere det på
 
 ### Oppgave 3 - Ta inn props i komponent
 
-a)
+#### a)
 Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
 
+<details>
+<summary>Hint</summary>
 ```
 const Something =styled.div<{size: string}>`
   width: ${(props) => props.size}rem;
 `
 ```
+</details>
+ 
+### Oppgave 4 - Ta inn props frå objekt
+
+#### a)
+
+ I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med vit bakgrunn.
+
 
 <details>
 <summary>Hint</summary>
-
+I styleTokens kan du sende in variants som en prop til Button- komponentem.
 </details>
-
-### Oppgave 4 - Ta inn props frå objekt
-
-a) I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med vit bakgrunn.
-
-````
-
-I styleTokens kan du sende in variants.
-
-```
-
+ 
 b) Vi har laga eit objekt med styling for 3 størrelser. (padding, font-size)
 Send inn ein storleik basert på input i komponenten
 Bruk verdier i objektet der dei skal endre ting.
@@ -129,18 +128,17 @@ large: 8px
 
 ### Oppgave 5 - Style en eksisterende komponent
 
-Det finst ein Button allereie. Vi har lyst på ein deleknapp som skal vere [annan farge].
+Det finst ein Button allereie. Vi har lyst på ein deleknapp som skal vere [annan farge].Lag ein styled component som wrapper den eksisterende komponenten Button.
 
-Hint: Lag ein styled component som wrapper den eksisterende komponenten Button.
-
-````
-
-styled(EksisterendeKomponent)`
-
-`;
-
+<details>
+<summary>Hint</summary>
 ```
-5 b )
+styled(EksisterendeKomponent)`
+`
+```
+</details>
+ 
+#### b )
 ThemeButton
 
 ### Oppgave n - Deleknapp revisited
