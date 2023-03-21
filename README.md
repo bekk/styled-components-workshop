@@ -52,8 +52,7 @@ styled.h1`
 
 ### Oppgave 2 - Selectorer
 
-#### a)
-Vi vil at når du peiker på overskrifta så retter understreken seg ut
+ a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
 
 <details>
 <summary>Hint</summary>
@@ -69,7 +68,7 @@ hint: `:hover`
 
 ```
 
-#### b)
+ b)
 
 ```
 `
@@ -80,7 +79,7 @@ hint: `:hover`
 
 ```
 
-#### c) Media queries
+c) Media queries
 Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil mindre enn tablet, og 3 rem på alt frå tablet og opp.
 Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
 
@@ -97,8 +96,7 @@ Den fancy enkle måten å gjere det på
 
 ### Oppgave 3 - Ta inn props i komponent
 
-#### a)
-Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
+a) Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
 
 <details>
 <summary>Hint</summary>
@@ -110,11 +108,7 @@ const Something =styled.div<{size: string}>`
 </details>
  
 ### Oppgave 4 - Ta inn props frå objekt
-
-#### a)
-
- I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med vit bakgrunn.
-
+ a) I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med vit bakgrunn.
 
 <details>
 <summary>Hint</summary>
@@ -142,8 +136,17 @@ styled(EksisterendeKomponent)`
 ```
 </details>
  
-#### b )
-ThemeButton
+ b) Ta i bruk Theme
+
+ <details>
+<summary>Hint</summary>
+  Wrappe knappen med en ThemeProvider
+```
+<ThemeProvider>
+`
+```
+</details>
+ 
 
 ### Oppgave n - Deleknapp revisited
 
