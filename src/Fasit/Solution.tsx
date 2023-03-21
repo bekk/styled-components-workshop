@@ -3,7 +3,7 @@ import { Task2a } from "./Task2a";
 import { Task2b } from "./Task2b";
 import { Task3a } from "./Task3a";
 import { Task3b } from "./Task3b";
-import { Task5 } from "./Task5";
+import { Task6 } from "./Task6";
 
 export const Solution = () => {
     //return <Task1 />;
@@ -11,5 +11,5 @@ export const Solution = () => {
     //return <Task2b />;
     //return <Task3a />;
     //return <Task3b />;
-    return <Task5 />;
+    return <Task6 />;
 };
