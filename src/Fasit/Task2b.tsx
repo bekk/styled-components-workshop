@@ -15,7 +15,7 @@ const Heading = styled.h1`
     }
 `;
 
-export const Task2c = () => {
+export const Task2b = () => {
     return (
         <>
             <header>
