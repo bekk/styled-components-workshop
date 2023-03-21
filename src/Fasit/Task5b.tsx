@@ -9,7 +9,7 @@ const Heading = styled.h1`
     text-decoration-style: wavy;
 `;
 
-export const Task4 = () => (
+export const Task5b = () => (
     <>
         <header>
             <Heading>Plant World (Solution)</Heading>

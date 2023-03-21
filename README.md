@@ -5,6 +5,7 @@ Dette er en workshop for deg som vil lære Styled Components rammeverket for Rea
 Styled Components dokumentasjon som du kan lese: https://styled-components.com/
 
 ## Starte applikasjonen
+
 Last ned repoet ved å kjøre kommandoen:  
  `git clone https://github.com/bekk/styled-components-workshop/` i terminalen.  
 Naviger til root-folderen ved å kjøre cd styled-components-workshop.
@@ -16,18 +17,19 @@ Start appen ved å kjøre `npm install` og deretter `npm start`.
 (Ting Ingrid og Anne Line skal gjere)
 2023-03-16
 Startpunkt til neste gong
-- Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
-- lage fasit for 3b
-- lag Button-komponent og oppgåve 4
-- bytt plass på oppg. 4 og 5
-- lag komponent som kan stylast i oppg "5" (like-knapp, så kan dei overskrive fargen)
-- Anne Line startar på presentasjon
 
-- Gjer det mogleg å vise fasit på oppgåve 3
-- Skrive inn hint i readme
-- Lage nav-bar-komponent som ein kan style ???
-- _Lage Button, den skal ha default-size="medium"_
-- _Lage størrelsesobjekt for knapp_
+-   Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
+-   lage fasit for 3b
+-   lag Button-komponent og oppgåve 4
+-   bytt plass på oppg. 4 og 5
+-   lag komponent som kan stylast i oppg "5" (like-knapp, så kan dei overskrive fargen)
+-   Anne Line startar på presentasjon
+
+-   Gjer det mogleg å vise fasit på oppgåve 3
+-   Skrive inn hint i readme
+-   Lage nav-bar-komponent som ein kan style ???
+-   _Lage Button, den skal ha default-size="medium"_
+-   _Lage størrelsesobjekt for knapp_
 
 ### Oppgave 1 - Lag din første Styled Component
 
@@ -99,7 +101,6 @@ Den fancy enkle måten å gjere det på
 a)
 Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
 
-
 ```
 const Something =styled.div<{size: string}>`
   width: ${(props) => props.size}rem;
@@ -111,19 +112,24 @@ const Something =styled.div<{size: string}>`
 
 </details>
 
-
-b) Skjul beskrivelsen 
+b) Skjul beskrivelsen
 Mål: lære "hvis something vis dette else noko anna"
 
 ### Oppgave 4 - Ta inn props frå objekt
 
-(Obligatorisk "her er det mange måter å gjøre det på", men vi har valgt en.)
+a) I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med vit bakgrunn.
 
-Vi har laga eit objekt med styling for 3 størrelser. (padding, font-size)
+````
+
+I styleTokens kan du sende in variants.
+
+```
+
+b) Vi har laga eit objekt med styling for 3 størrelser. (padding, font-size)
 Send inn ein storleik basert på input i komponenten
 Bruk verdier i objektet der dei skal endre ting.
 
-b) Designsystemet har blitt oppdatert og fra nå av skal vi ha ulik border-radius på ulike størrelser.
+c) Designsystemet har blitt oppdatert og fra nå av skal vi ha ulik border-radius på ulike størrelser.
 small: 4px
 medium: 4px
 large: 8px
@@ -134,12 +140,15 @@ Det finst ein Button allereie. Vi har lyst på ein deleknapp som skal vere [anna
 
 Hint: Lag ein styled component som wrapper den eksisterende komponenten Button.
 
-```
+````
+
 styled(EksisterendeKomponent)`
 
-
 `;
+
 ```
+5 b )
+ThemeButton
 
 ### Oppgave n - Deleknapp revisited
 
@@ -158,10 +167,11 @@ Hint: du må feilsøke, hehe
 Når vi hovrer kort vil vi ha undrestrek på overskriften inni der - og bare den
 
 ```
+
 &:hover h2 {
 
-
 }
+
 ```
 
 ### Oppgave 8 - Animasjoner <3
@@ -169,3 +179,4 @@ Når vi hovrer kort vil vi ha undrestrek på overskriften inni der - og bare den
 Uten å bruke js
 
 ### Oppgave n -
+```
