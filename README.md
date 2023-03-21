@@ -125,27 +125,11 @@ b) I komponents mappa finner du en Button, vi ønsker at du bruker denne kompone
 I styleTokens kan du sende in variants som en prop til Button- komponenten.
 
 </details>
- 
-### Oppgave 4 - Theme
-
-b) Ta i bruk Theme
-
- <details>
-<summary>Hint</summary>
-  Wrappe knappen med en ThemeProvider
-
-```
-<ThemeProvider></ThemeProvider>
-
-```
-
-</details>
 
 
+### Oppgave 4 - Style en eksisterende komponent
 
-### Oppgave 5 - Style en eksisterende komponent
-
-På plantekorta våre har vi ein "like"-knapp forma som eit hjarte (`LikeButton.tsx`). Vi vil at denne skal vere grøn på plantekorta våre (`Plant.tsx`), men den skal framleis vere raud om ein bruker den andre stadar. 
+På plantekorta våre har vi ein "like"-knapp forma som eit hjarte (`LikeButton.tsx`). Vi vil at denne skal vere grøn på plantekorta våre (`Plant.tsx`), men den skal framleis vere raud om ein bruker den andre stadar.
 
 Denne oppgåva skal løysast utan å endre koden i `LikeButton`.
 
@@ -160,7 +144,7 @@ Lag ein styled component som wrappar `LikeButton`
 <details>
 <summary>Hint 2</summary>
 
-`styled.div` er ein forenkla måte å skrive `styled('div')` på. 'div' representerar html-elementet div slik <div> gjer det i JSX. 
+`styled.div` er ein forenkla måte å skrive `styled('div')` på. 'div' representerar html-elementet div slik <div> gjer det i JSX.
 
 </details>
 
@@ -178,6 +162,25 @@ const SomeComponent = styled(Component)`
 ```
 
 (Hugs at du må bytte ut den "ustyla" komponenten med den nye du har laga)
+
+</details>
+
+
+
+ 
+### Oppgave 5 - Theme
+
+Ta i bruk Theme
+
+ <details>
+<summary>Hint</summary>
+
+  Wrappe knappen med en ThemeProvider
+
+```
+<ThemeProvider></ThemeProvider>
+
+```
 
 </details>
 
