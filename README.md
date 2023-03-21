@@ -55,7 +55,10 @@ styled.h1`
 #### a)
 Vi vil at når du peiker på overskrifta så retter understreken seg ut
 
+<details>
+<summary>Hint</summary>
 hint: `:hover`
+</details>
 
 ```
 `
