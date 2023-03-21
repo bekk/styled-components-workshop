@@ -4,7 +4,7 @@ import { BORDER_RADIUS } from "../StyleTokens/borderRadius";
 import { COLORS } from "../StyleTokens/colors";
 import { SHADOW } from "../StyleTokens/shadow";
 import { Plant as PlantType } from "../Data/Plants";
-import { LikeButton } from "../Components/HeartButton";
+import { LikeButton } from "../Components/LikeButton";
 
 const Container = styled.div`
     display: flex;
