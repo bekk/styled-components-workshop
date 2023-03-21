@@ -126,18 +126,37 @@ Vi bruker teiknet `&` for å referere til gjeldande komponent
 
 
 b) Media queries  
-Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil mindre enn tablet, og 3 rem på alt frå tablet og opp.
+Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
 Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
+
+Gjerne tenk mobile-first.
 
 <br>
 <details>
-<summary>Hint</summary>
-(@media...) og template strings
+<summary>Hint 1</summary>
+Styled components gjer det mogleg å nøste media queries.
 </details>
 
 <br>
 <details>
-<summary>Hint</summary>
+<summary>Hint 2</summary>
+Styled components er basert på template strings [lenke her]
+For å veksle mellom css og typescript bruker du `${}`.
+</details>
+
+<br>
+<details>
+<summary>Hint 3</summary>
+// TODO howto media query
+
+</details>
+
+
+
+<br>
+<details>
+<summary>Hint 4</summary>
+// TODO
 Tablet-and-up
 Den fancy enkle måten å gjere det på
 </details>
