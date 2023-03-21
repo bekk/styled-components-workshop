@@ -19,13 +19,9 @@ Start appen ved å kjøre `npm install` og deretter `npm start`.
 Startpunkt til neste gong
 
 -   Finne ut kva vi gjer med oppgåve 2b (kanskje lage ein nav-bar?)
--   lage fasit for 3b
 -   lag Button-komponent og oppgåve 4
 -   bytt plass på oppg. 4 og 5
 -   lag komponent som kan stylast i oppg "5" (like-knapp, så kan dei overskrive fargen)
--   Anne Line startar på presentasjon
-
--   Gjer det mogleg å vise fasit på oppgåve 3
 -   Skrive inn hint i readme
 -   Lage nav-bar-komponent som ein kan style ???
 -   _Lage Button, den skal ha default-size="medium"_
@@ -111,9 +107,6 @@ const Something =styled.div<{size: string}>`
 <summary>Hint</summary>
 
 </details>
-
-b) Skjul beskrivelsen
-Mål: lære "hvis something vis dette else noko anna"
 
 ### Oppgave 4 - Ta inn props frå objekt
 
