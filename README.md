@@ -60,7 +60,49 @@ styled.h1`
 
 <details>
 <summary>Hint 1</summary>
- // TODO skriv om nøsting
+
+I styled-components kan du nøste css-selectorar. Nøstinga i Styled components er veldig lik den i rammeverket [SCSS/Sass](https://sass-lang.com/guide) for dei som kjenner til det.
+
+Døme:  
+Vi har følgjande JSX-layout i ein komponent:
+```
+<Container className="sc-container">
+  <p>Vi vil at denne teksten skal bli raud</p>
+  Denne teksten skal framleis vere svart.
+</Container>
+```
+
+For å få få raud tekst på `p`-elementet kan vi gjere slik:
+
+```
+const Container = styled.div`
+  color: black;
+  
+  p {
+    color: red;
+  }
+`;
+```
+
+
+Med rein CSS ville dette sett slik ut: 
+
+```
+div {
+  color: black;
+}
+
+div p { 
+  color: red;
+}
+```
+
+<br>
+
+Nokre fordelar med at ein kan nøste selectorar i styled components:
+- Du slepp repetere selectorar
+- Det er lett å samle ulike tilstandar for ein komponent på same stad
+- Du kan manipulere innhaldet i komponentar du ikkje har laga sjølv
 
 </details>
 
@@ -68,13 +110,16 @@ styled.h1`
 <details>
 <summary>Hint 2</summary>
 
+Nøsting fungerer også på pseudo-selektorar som :hover :first-child og :not().
+
+Vi bruker teiknet `&` for å referere til gjeldande komponent
+
 ```
 `
   &:hover {
     // Rett ut understrek
   }
 `
-
 ```
 
 </details>
