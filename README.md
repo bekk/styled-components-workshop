@@ -9,7 +9,7 @@ Styled Components dokumentasjon som du kan lese: https://styled-components.com/
 Last ned repoet ved å kjøre kommandoen:  
  `git clone https://github.com/bekk/styled-components-workshop/` i terminalen.  
 Naviger til root-folderen ved å kjøre cd styled-components-workshop.
-Start appen ved å kjøre `npm install` og deretter `npm start`.  
+Start appen ved å kjøre `npm install` og deretter `npm run start`.  
 Åpne koden i din favoritteditor, naviger til src/App og følg instruksjonene derifra!
 
 
@@ -106,7 +106,7 @@ Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?
 
 <br>
 <details>
-<summary>Hint</summary>
+<summary>Hint 1</summary>
 
 ```
 const Something =styled.div<{size: string}>`
@@ -120,7 +120,7 @@ b) I komponents mappa finner du en Button, vi ønsker at du bruker denne kompone
 
 <br>
 <details>
-<summary>Hint</summary>
+<summary>Hint 2</summary>
 
 I styleTokens kan du sende in variants som en prop til Button- komponenten.
 
@@ -133,14 +133,13 @@ På plantekorta våre har vi ein "like"-knapp forma som eit hjarte (`LikeButton.
 
 Denne oppgåva skal løysast utan å endre koden i `LikeButton`.
 
-
+<br>
 <details>
 <summary>Hint</summary>
 Lag ein styled component som wrappar `LikeButton`
 </details>  
 
 <br>
-
 <details>
 <summary>Hint 2</summary>
 
@@ -149,7 +148,6 @@ Lag ein styled component som wrappar `LikeButton`
 </details>
 
 <br>
-
 <details>
 <summary>Hint 3</summary>
 
@@ -165,10 +163,20 @@ const SomeComponent = styled(Component)`
 
 </details>
 
+b) Vi vil at deleknappen alltid skal vere Button size="small", men vil slippe å skrive det hver gang den brukes. Kan du fikse dette?
 
 
- 
-### Oppgave 5 - Theme
+### Oppgave 5 - Lag din eigen komponent - og style den utanfrå
+
+Vi har ein komponent som har litt state. Du skal lage en style'a utgave av denne. [skriv kva anna styling den skal ha.]
+
+Lykke til.
+
+Hint: du må feilsøke, hehe
+
+
+
+### Oppgave 6 - Theme
 
 Ta i bruk Theme
 
@@ -186,34 +194,3 @@ Ta i bruk Theme
 
 
 
-
-### Oppgave n - Deleknapp revisited
-
-Vi vil at deleknappen alltid skal vere Button size="small", men vil slippe å skrive det hver gang den brukes. Kan du fikse dette?
-
-### Oppgave 6 - Den der du lærer at du må ha med className
-
-Vi har ein komponent som har litt state. Du skal lage en style'a utgave av denne. [skriv kva anna styling den skal ha.]
-
-Lykke til.
-
-Hint: du må feilsøke, hehe
-
-### Oppgave 7 - Velge elementer inni seg basert på state
-
-Når vi hovrer kort vil vi ha undrestrek på overskriften inni der - og bare den
-
-```
-
-&:hover h2 {
-
-}
-
-```
-
-### Oppgave 8 - Animasjoner <3
-
-Uten å bruke js
-
-### Oppgave n -
-```
