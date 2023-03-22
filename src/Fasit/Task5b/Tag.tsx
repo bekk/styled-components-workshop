@@ -14,16 +14,17 @@ const Container = styled.span`
 `;
 
 interface Props {
+    className?: string;
     hidden?: boolean;
     children?: ReactNode;
 }
 
-export const Tag = ({ hidden = false, children }: Props) => {
+export const Tag = ({ className, hidden = false, children }: Props) => {
     if (hidden) {
         return null;
     }
 
     return (
-        <Container>{children}</Container>
+        <Container className={className}>{children}</Container>
     )
 }
