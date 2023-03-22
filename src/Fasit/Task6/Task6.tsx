@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ThemeButtons } from "./ThemeButtons";
-import { Plants } from "./Plants";
+import { Plants } from "../../Components/Plants";
 
 const Heading = styled.h1`
     font-size: 3rem;
