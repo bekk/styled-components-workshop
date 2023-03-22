@@ -367,26 +367,32 @@ du må feilsøke, hehe
 ### Oppgave 6 - Theme Provider
 
 Ved å bruke ThemeProvider kan vi wrappe in komponenter og dermed raskt sette opp flere tilpassede temaer.
-Lag et theme som har fargen COLORS.COLORS.BLUE_500 og hvit bakgrundsfarge, bruk tema for å sette farge på knapper plasser disse knappene under alle plantekortene.
+Lag et theme som har fargen `BLUE_500` og `WHITE` som bakgrundsfarge, bruk tema for å sette farge på knapper plasser disse knappene under alle plantekortene.
 
  <details>
 <summary>Hint</summary>
 
-Ta i bruk en ThemeProvide rundt knappen
+Ta i bruk en ThemeProvider rundt knappen
 
 ```
 <ThemeProvider></ThemeProvider>
 
 ```
 
+</details>
+
 b) Nå ønsker vi at alle knapper som ikke bruker themet skal få fargen "palevioletred".
 
 <details>
 <summary>Hint</summary>
-```
-Ta i bruk defaultProps
 
 ```
+Ta i bruk defaultProps på knappen.
+
+```
+
+</details>
+
 <details>
 <summary>Les mer her om hvordan man kan bruke ThemeProvider for å bytte mellom forskjellige theme </summary>
 
