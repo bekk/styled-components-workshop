@@ -55,7 +55,7 @@ styled.h1`
 
 ### Oppgave 2 - Selectorer
 
- a) Vi vil at når du peiker på overskrifta så retter understreken seg ut  
+#### a) Vi vil at når du peiker på overskrifta så retter understreken seg ut  
 
 
 <details>
@@ -125,8 +125,8 @@ Vi bruker teiknet `&` for å referere til gjeldande komponent
 </details>
 
 
-b) Media queries  
-Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
+#### b) Media queries  
+Slik det ser ut no vert tittelen på sida litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
 Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
 
 Gjerne tenk mobile-first.
@@ -134,37 +134,61 @@ Gjerne tenk mobile-first.
 <br>
 <details>
 <summary>Hint 1</summary>
-Styled components gjer det mogleg å nøste media queries.
+
+Styled components gjer det ikkje berre mogleg å nøste selectorar, men også [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries). Vi vil setje eigen styling for alle skjermar med ei breidd større enn storleiken til ein tablet.
+
 </details>
 
 <br>
 <details>
 <summary>Hint 2</summary>
-Styled components er basert på template strings [lenke her]
-For å veksle mellom css og typescript bruker du `${}`.
+Ein media query som ser på skjermstorleik kan sjå slik ut:
+
+```
+@media (min-width: 40rem) {
+  // some styling here
+} 
+```
+
 </details>
+
 
 <br>
 <details>
 <summary>Hint 3</summary>
-// TODO howto media query
+Styled components er basert på [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). Desse er notert med backticks (``). Template strings gjer at du kan veksle mellom å skrive "css" (tekststrengar) og JavaScript/TypeScript.
+
+For å veksle mellom css og typescript bruker du `${}` inne i template stringen.
+
+Dette gjer at du kan bruke dei forhandsdefinerte breakpointsa vi har laga inne i stylinga di.
 
 </details>
-
-
 
 <br>
 <details>
 <summary>Hint 4</summary>
-// TODO
-Tablet-and-up
-Den fancy enkle måten å gjere det på
+Sidan vi kan blande inn TypeScript i koden vår har vi juksa litt og laga klart nokre konstantar for "tabletAndUp" og 
+`tabletAndUp` og `desktopAndUp`. Desse er alias for `@media (min-width: ${someBreakpointValue})`. 
+
+For å bruke desse brukar du `tabletAndUp` på same måte som du ville brukt ein selector:
+
+```
+// inne i template string
+
+  tabletAndUp {
+    // some styling here
+  } 
+
+```
+
+Fordelen med dette er at det trengst litt mindre tenking for å lese at denne stylinga gjeld for tablet'ar og større skjermar enn det gjer å lese det same frå `@media (min-width: ${BREAKPOINTS.TABLET})`.
+
 </details>
 
 
 ### Oppgave 3 - Ta inn props i komponent
 
-a) Ta i bruk prop'en "backgroundColor"
+#### a) Ta i bruk prop'en "backgroundColor"
 Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
 
 Test løysinga di ved å sende inn for eksempel `COLORS.LIME_200` som bakgrunnsfarge på plantekorta.
@@ -210,18 +234,43 @@ Vi har sendt backgroundColor inn i komponenten og definert typen av den – men 
 
 <br>
 
-b) I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med vit bakgrunn.
+#### b) Når fleire verdiar skal endrast basert på ein prop komponenten får inn
+
+I components-mappa finn du komponenten Buttons som rendrar to Buttons. Vi vil at dei skal få ulik styling basert på kva variant vi sender inn som prop.
+
+PRIMARY
+ - tekst: `COLORS.BLUE_900`
+ - bakgrunn: `COLORS.BLUE_500`  
+
+Andre variantar
+ - tekst: `COLORS.WHITE`
+ - bakgrunn: `palevioletred`
+
+Du finn ein enum for variantar i `/StyleTokens/variants.ts`
+
+<br>
+<details>
+<summary>Hint 1</summary>
+I staden for å sende inn ein prop for tekst og ein for bakgrunn kan vi styre kva som skal visast basert på verdien til ein variant-prop.
+
+Slik som i oppgåve 2a må vi sende inn ein prop til Button, definere type for den og hente den ut med `${props => props.propName}`. Du vel sjølv kva du vil kalle propen.
+
+</details>
+
+
 
 <br>
 <details>
 <summary>Hint 2</summary>
 
-I styleTokens kan du sende in variants som en prop til Button- komponenten.
+Sidan vi skal ha lik styling for alle andre variantar enn PRIMARY kan vi bruke ein [ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) til å velje kva farge som skal brukast, basert på verdien til prop-en du sendte inn til Button.
 
 </details>
 
 
 ### Oppgave 4 - Style en eksisterende komponent
+
+#### a) Overskrive bakgrunnsfarge
 
 På plantekorta våre har vi ein "like"-knapp forma som eit hjarte (`LikeButton.tsx`). Vi vil at denne skal vere grøn på plantekorta våre (`Plant.tsx`), men den skal framleis vere raud om ein bruker den andre stadar.
 
@@ -257,16 +306,60 @@ const SomeComponent = styled(Component)`
 
 </details>
 
-b) Vi vil at deleknappen alltid skal vere Button size="small", men vil slippe å skrive det hver gang den brukes. Kan du fikse dette?
+#### b) Overskrive ein prop
+Vi vil at deleknappen alltid skal vere Button size="small", men vil slippe å skrive det hver gang den brukes. Kan du fikse dette?
 
 
-### Oppgave 5 - Lag din eigen komponent - og style den utanfrå
+### Oppgave 5 - Lag din eigen komponent
+I denne oppgåva skal du få gjere alt sjølv.
 
-Vi har ein komponent som har litt state. Du skal lage en style'a utgave av denne. [skriv kva anna styling den skal ha.]
+
+#### a) Lag ein "tag"-komponent
+
+Vi har lyst på ein komponent vi kan bruke som merkelapp, for eksempel til å markere ulike plantar i kategoriar. Tag-komponenten skal kunne ta inn ein prop "hidden" som gjer at den ikkje vert rendra (`return null`). Det skal gå an å sende inn valfri tekst til taggen.
+
+<br>
+Outputten av komponenten i DOMen skal vere noko liknande dette:
+
+```html
+<!-- HTML-->
+<span class="sc-some-generated-classname some-other-hash">Some tag text here</span>
+```
+
+```css
+/* CSS */
+.some-other-hash {
+  background: #ecfccb;
+  border: 1px solid #65a30d;
+  color: black;
+  padding: 0.125rem 0.75rem;
+  border-radius: 2px;
+  width: fit-content;
+}
+```
+
+
+<br>
+
+#### b) Lag ein custom-tag for "water"
+
+Vi har lyst på ein forhandslaga Tag for kor mykje vatn planten treng. Kall denne WaterTag.
+
+Alle Watertags skal ha teksten "Water: " og så valfri tekst ein kan sende inn i komponenten, slik at ein ikkje treng skrive inn dette for kvar enkelt Tag.
+
+WaterTag skal ha denne stylinga annleis enn Tag:
+bakgrunnsfarge: `BLUE_200`  
+border: `BLUE_600`  
+
 
 Lykke til.
 
-Hint: du må feilsøke, hehe
+
+<details>
+<summary>Hint</summary>
+du må feilsøke, hehe
+
+</details>
 
 
 
