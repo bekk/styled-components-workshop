@@ -376,13 +376,10 @@ b) Nå ønsker vi at alle knapper som ikke bruker themet skal få fargen "palevi
 <details>
 <summary>Hint</summary>
 
-```
-Ta i bruk defaultProps på knappen.
-
-```
+Ta i bruk `defaultProps` på knappen.
 
 </details>
 
-Les mer her om hvordan man kan bruke ThemeProvider for å bytte mellom forskjellige theme </summary>
+Mer tid ? : Les mer her om hvordan man kan bruke ThemeProvider for å bytte mellom forskjellige theme </summary>
 
 [Hvordan bruke Theme for å bytte mellom forskjellige temar](https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/)
