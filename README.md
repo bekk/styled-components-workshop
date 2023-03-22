@@ -341,6 +341,9 @@ Outputten av komponenten i DOMen skal vere noko liknande dette:
 }
 ```
 
+Idé til korleis komponenten kan testast:  
+Legg til ein tag med teksten "Indoor plant" på alle korta i Plants.
+
 <br>
 
 #### b) Lag ein custom-tag for "water"
@@ -352,6 +355,10 @@ Alle Watertags skal ha teksten "Water: " og så valfri tekst ein kan sende inn i
 WaterTag skal ha denne stylinga annleis enn Tag:
 bakgrunnsfarge: `BLUE_200`  
 border: `BLUE_600`
+
+Idé til korleis komponenten kan testast:  
+Legg på WaterTags i Plant-komponenten og bruk `water`-verdien til plantane som tekst i tagen.
+
 
 ### Oppgave 6 - Theme Provider
 
