@@ -9,14 +9,24 @@ const ButtonContainer = styled.button`
   color: deeppink; // Oppgave 5 skal løses uten å endre denne linja ;)
 `;
 
-export const LikeButton = ({ ...rest }: ButtonHTMLAttributes<HTMLButtonElement>) => {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+    size?: "medium" | "large";
+}
+
+export const LikeButton = ({ size = "medium", ...rest }: Props ) => {
     const [liked, setLiked] = useState(false)
 
+    const sizeAsPx = size === "large" ? 40 : 32;
+
+    const toggleLiked = () => {
+        setLiked(prevState => !prevState)
+    }
+
     return (
-        <ButtonContainer {...rest} onClick={() => setLiked(prevState => !prevState)}>
+        <ButtonContainer {...rest} onClick={toggleLiked}>
             {liked
-                ? <IoMdHeart size={40} title="Stop liking" />
-                : <IoMdHeartEmpty size={40} title="Likes" />
+                ? <IoMdHeart size={sizeAsPx} title="Stop liking" />
+                : <IoMdHeartEmpty size={sizeAsPx} title="Likes" />
             }
         </ButtonContainer>
     )

@@ -34,7 +34,7 @@ export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
             <div>
                 <img src={plant.imageUrl} alt="" />
             </div>
-            <PlantLikeButton />
+            <PlantLikeButton size="large"/>
             <p>{plant.description}</p>
         </Card>
     );

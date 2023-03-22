@@ -26,7 +26,7 @@ export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
             <div>
                 <img src={plant.imageUrl} alt="" />
             </div>
-            <LikeButton />
+            <LikeButton size="large" />
             <p>{plant.description}</p>
         </Card>
     );
