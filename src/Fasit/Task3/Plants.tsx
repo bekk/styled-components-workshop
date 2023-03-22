@@ -9,6 +9,9 @@ const Container = styled.div`
     gap: 2rem;
 `;
 
+/**
+ * Plants component for task 3a solution
+ * */
 export const Plants = () => {
     return (
         <Container>

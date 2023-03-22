@@ -1,5 +1,6 @@
 import styled, { ThemeProvider } from "styled-components";
 import { COLORS } from "../../StyleTokens/colors";
+
 const Button = styled.button`
     color: ${(props) => props.theme.color};
     border: 2px solid ${(props) => props.theme.color};
@@ -19,7 +20,7 @@ const theme = {
 interface Props {
     buttonText: string;
 }
-export const ThemeButton = ({ buttonText }: Props) => {
+export const ThemeButtons = ({ buttonText }: Props) => {
     return (
         <div>
             <ThemeProvider theme={theme}>

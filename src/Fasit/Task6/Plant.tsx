@@ -19,8 +19,9 @@ interface Props {
   backgroundColor?: COLORS;
 }
 
+
 /**
- * Plant component for task 3a solution
+ * Plant component for task 6 solution
  * */
 export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
   return (

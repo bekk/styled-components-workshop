@@ -19,6 +19,9 @@ interface Props {
     children?: ReactNode;
 }
 
+/**
+ * Tag component for task 5b solution
+ * */
 export const Tag = ({ className, hidden = false, children }: Props) => {
     if (hidden) {
         return null;
