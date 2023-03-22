@@ -5,6 +5,6 @@ export enum BREAKPOINTS {
     LARGE_DESKTOP = "120rem",
 }
 
-export const tabletAndUp = `@media (min-width: ${BREAKPOINTS.TABLET})`
-export const desktopAndUp = `@media (min-width: ${BREAKPOINTS.DESKTOP})`
-export const largeDesktopAndUp = `@media (min-width: ${BREAKPOINTS.LARGE_DESKTOP})`
+export const tabletAndUp = `@media (min-width: ${BREAKPOINTS.TABLET})`;
+export const desktopAndUp = `@media (min-width: ${BREAKPOINTS.DESKTOP})`;
+export const largeDesktopAndUp = `@media (min-width: ${BREAKPOINTS.LARGE_DESKTOP})`;

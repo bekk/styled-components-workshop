@@ -4,13 +4,13 @@ import { COLORS } from "../../StyleTokens/colors";
 import { BORDER_RADIUS } from "../../StyleTokens/borderRadius";
 
 const Container = styled.span`
-  background: ${COLORS.LIME_100};
-  border: 1px solid ${COLORS.LIME_600};
-  color: black;
-  
-  padding: 0.125rem 0.75rem;
-  border-radius: ${BORDER_RADIUS.SMALL};
-  width: fit-content;
+    background: ${COLORS.LIME_100};
+    border: 1px solid ${COLORS.LIME_600};
+    color: black;
+
+    padding: 0.125rem 0.75rem;
+    border-radius: ${BORDER_RADIUS.SMALL};
+    width: fit-content;
 `;
 
 interface Props {
@@ -24,7 +24,5 @@ export const Tag = ({ className, hidden = false, children }: Props) => {
         return null;
     }
 
-    return (
-        <Container className={className}>{children}</Container>
-    )
-}
+    return <Container className={className}>{children}</Container>;
+};

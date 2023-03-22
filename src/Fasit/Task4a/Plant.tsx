@@ -6,17 +6,17 @@ import { LikeButton } from "../../Components/LikeButton";
 import { Plant as PlantType } from "../../Data/Plants";
 
 const Card = styled.a`
-  flex: 1 10rem;
-  max-width: 50rem;
-  background: ${COLORS.WHITE};
-  box-shadow: ${SHADOW.SMALL};
-  border-radius: ${BORDER_RADIUS.XLARGE};
-  padding: 32px;
+    flex: 1 10rem;
+    max-width: 50rem;
+    background: ${COLORS.WHITE};
+    box-shadow: ${SHADOW.SMALL};
+    border-radius: ${BORDER_RADIUS.XLARGE};
+    padding: 32px;
 `;
 
 /* A new component wrapping LikeButton */
 const PlantLikeButton = styled(LikeButton)`
-  color: ${COLORS.LIME_600}
+    color: ${COLORS.LIME_600};
 `;
 
 interface Props {
@@ -34,7 +34,7 @@ export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
             <div>
                 <img src={plant.imageUrl} alt="" />
             </div>
-            <PlantLikeButton size="large"/>
+            <PlantLikeButton size="large" />
             <p>{plant.description}</p>
         </Card>
     );

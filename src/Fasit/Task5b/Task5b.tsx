@@ -3,9 +3,9 @@ import { Tag } from "./Tag";
 import { WaterTag } from "./WaterTag";
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 `;
 
 export const Task5b = () => {
@@ -15,5 +15,5 @@ export const Task5b = () => {
             <WaterTag>Medium</WaterTag>
             <Tag hidden={true}>This tag should be hidden</Tag>
         </Container>
-    )
-}
+    );
+};

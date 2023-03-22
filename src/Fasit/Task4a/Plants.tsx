@@ -3,9 +3,9 @@ import { plants } from "../../Data/Plants";
 import { Plant } from "./Plant";
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 `;
 
 /**

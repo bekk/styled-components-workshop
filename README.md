@@ -121,7 +121,8 @@ Vi bruker teiknet `&` for å referere til gjeldande komponent
 
 </details>
 
-#### b) Media queries  
+#### b) Media queries
+
 Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
 
 Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
@@ -257,6 +258,7 @@ Slik som i oppgåve 2a må vi sende inn ein prop til Button, definere type for d
 </details>
 
 #### b) Justere farge basert på variant
+
 I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med hvit bakgrunn.
 
 <br>
@@ -379,6 +381,6 @@ Ta i bruk `defaultProps` på knappen.
 
 </details>
 
-#### Mer tid ? 
+#### Mer tid ?
 
 Les mer her om [Hvordan bruke ThemeProvider for å bytte mellom forskjellige temar](https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/)
