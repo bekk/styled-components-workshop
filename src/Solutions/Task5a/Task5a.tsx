@@ -13,6 +13,7 @@ const Heading = styled.h1`
 const Container = styled.div`
     display: flex;
     gap: 1rem;
+    padding: 2rem;
 `;
 
 export const Task5a = () => {

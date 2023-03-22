@@ -5,7 +5,7 @@ import { BORDER_RADIUS } from "../StyleTokens/borderRadius";
 import { COLORS } from "../StyleTokens/colors";
 import { LikeButton } from "./LikeButton";
 
-const Card = styled.a`
+const Card = styled.div`
     flex: 1 10rem;
     max-width: 50rem;
     background: ${COLORS.WHITE};
@@ -21,7 +21,7 @@ interface Props {
 
 export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
     return (
-        <Card href={`#${plant.name}`}>
+        <Card>
             <h2>{plant.name}</h2>
             <div>
                 <img src={plant.imageUrl} alt="" />
