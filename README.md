@@ -354,16 +354,6 @@ WaterTag skal ha denne stylinga annleis enn Tag:
 bakgrunnsfarge: `BLUE_200`  
 border: `BLUE_600`
 
-### Oppgave 5 - Lag din eigen komponent - og style den utanfrå
-
-Lykke til.
-
-<details>
-<summary>Hint</summary>
-du må feilsøke, hehe
-
-</details>
-
 ### Oppgave 6 - Theme Provider
 
 Ved å bruke ThemeProvider kan vi wrappe in komponenter og dermed raskt sette opp flere tilpassede temaer.
