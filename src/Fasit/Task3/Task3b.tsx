@@ -1,7 +1,7 @@
 import styled from "styled-components";
-
 import { Buttons } from "./Button";
 import { Plants } from "./Plants";
+
 const Heading = styled.h1`
     font-size: 3rem;
     font-weight: bold;
@@ -15,6 +15,6 @@ export const Task3b = () => (
             <Heading>Plant World (Solution)</Heading>
         </header>
         <Plants />
-        <Buttons />
+        <Buttons /> {/* This component is added in task 3b */}
     </>
 );

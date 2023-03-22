@@ -190,7 +190,7 @@ Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan en
 
 Test løysinga di ved å sende inn for eksempel `COLORS.LIME_200` som bakgrunnsfarge på plantekorta.
 
-#### Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?
+_Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?_
 
 <br>
 <details>
