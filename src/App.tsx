@@ -19,7 +19,7 @@ const ShowSolutionChecxbox = styled.div`
 `;
 
 function App() {
-    const [showSolution, setShowSolution] = useState(true); // TODO bytt denne til false før workshop
+    const [showSolution, setShowSolution] = useState(false);
 
     return (
         <Container className="App">

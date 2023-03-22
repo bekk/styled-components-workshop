@@ -10,7 +10,7 @@ import { Task6 } from "./Task6/Task6";
 import { Task6b } from "./Task6/Task6b";
 
 export const Solution = () => {
-    // return <Task1 />;
+    return <Task1 />;
     // return <Task2a />;
     // return <Task2b />;
     // return <Task3a />;
@@ -18,6 +18,6 @@ export const Solution = () => {
     // return <Task4a />;
     // return <Task5a />
     // return <Task5b />
-    return <Task6 />;
-    //return <Task6b />;
+    // return <Task6 />;
+    // return <Task6b />;
 };
