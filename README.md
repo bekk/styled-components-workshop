@@ -396,7 +396,6 @@ Ta i bruk defaultProps på knappen.
 <details>
 <summary>Les mer her om hvordan man kan bruke ThemeProvider for å bytte mellom forskjellige theme </summary>
 
-https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/
+[Hvordan bruke Theme for å bytte mellom forskjellige temar](https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/)
 
 </details>
-```
