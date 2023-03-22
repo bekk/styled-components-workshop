@@ -15,22 +15,22 @@ const Card = styled.div<{ backgroundColor: COLORS }>`
 `;
 
 interface Props {
-  plant: PlantType;
-  backgroundColor?: COLORS;
+    plant: PlantType;
+    backgroundColor?: COLORS;
 }
 
 /**
  * Plant component for task 3a solution
  * */
 export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
-  return (
-    <Card backgroundColor={backgroundColor}>
-      <h2>{plant.name}</h2>
-      <div>
-        <img src={plant.imageUrl} alt="" />
-      </div>
-      <LikeButton size="large" />
-      <p>{plant.description}</p>
-    </Card>
-  );
+    return (
+        <Card backgroundColor={backgroundColor}>
+            <h2>{plant.name}</h2>
+            <div>
+                <img src={plant.imageUrl} alt="" />
+            </div>
+            <LikeButton size="large" />
+            <p>{plant.description}</p>
+        </Card>
+    );
 };

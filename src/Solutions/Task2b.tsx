@@ -11,7 +11,7 @@ const Heading = styled.h1`
     &:hover {
         text-decoration: underline;
     }
-    
+
     @media (min-width: ${BREAKPOINTS.TABLET}) {
         font-size: 3rem;
     }

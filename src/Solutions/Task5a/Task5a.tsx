@@ -18,17 +18,17 @@ const Container = styled.div`
 
 export const Task5a = () => {
     return (
-      <>
-        <header>
-          <Heading>Plant World (Solution)</Heading>
-        </header>
-        <Container>
-            <Tag>Bright light</Tag>
-            <Tag>Medium</Tag>
-            <Tag hidden={true}>This tag should be hidden</Tag>
-        </Container>
-        <Plants />
-        <Buttons />
-      </>
+        <>
+            <header>
+                <Heading>Plant World (Solution)</Heading>
+            </header>
+            <Container>
+                <Tag>Bright light</Tag>
+                <Tag>Medium</Tag>
+                <Tag hidden={true}>This tag should be hidden</Tag>
+            </Container>
+            <Plants />
+            <Buttons />
+        </>
     );
 };

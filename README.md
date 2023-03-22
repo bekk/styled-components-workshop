@@ -4,7 +4,7 @@ Dette er ein workshop for deg som vil lære å bruke rammeverket Styled Componen
 
 Workshopen består av eit sett med oppgåver med gode forklaringar etter kvar oppgave. Oppgåvene har hint som kan hjelpe deg på vegen. Det finst også løysingsforslag i mappa "Solutions". Om du vil sjå løysingsforslaga i nettlesaren kommenterer du inn rett komponent i `Solutions.tsx` og huker av for "Vis fasit" i nettlesaren. "Vis fasit" let deg toggle mellom arbeidet ditt og fasiten.
 
-[Styled Components sin dokumentasjon](https://styled-components.com/) kan også vere eit godt verktøy om du står fast. 
+[Styled Components sin dokumentasjon](https://styled-components.com/) kan også vere eit godt verktøy om du står fast.
 
 _Finn du bugs eller skrivefeil i koden vår er det veldig hyggeleg om du opprettar ein PR ås kan vi gjere koden betre saman_
 
@@ -14,10 +14,9 @@ Last ned repoet ved å køyre følgjande kommandoar i terminalen:
 Klon repo: `git clone https://github.com/bekk/styled-components-workshop/`  
 Naviger til mappa: `cd styled-components-workshop`  
 Installer avhengigheiter: `npm install`  
-Start applikasjonen: `npm run start`  
+Start applikasjonen: `npm run start`
 
 Åpne koden i din favoritteditor. Oppgåvene finn du her i README.
-
 
 ## Oppgåver
 
@@ -46,8 +45,7 @@ Om vi vil style ei lenke gjer vi slik:
 
 ```typescript
 styled.a`
-  // styling her
-
+    // styling her
 `;
 ```
 
@@ -60,7 +58,8 @@ Du skal gjere det same, men for eit overskriftselement.
 ### Oppgave 2 - Selectorer
 
 #### a) Rett ut understrek
-Vi vil at når du peiker på overskrifta så retter understreken seg ut. 
+
+Vi vil at når du peiker på overskrifta så retter understreken seg ut.
 
 <details>
 <summary>Hint 1</summary>
@@ -72,8 +71,8 @@ Vi har følgjande JSX-layout i ein komponent:
 
 ```jsx
 <Container className="sc-container">
-  <p>Vi vil at denne teksten skal bli raud</p>
-  Denne teksten skal framleis vere svart.
+    <p>Vi vil at denne teksten skal bli raud</p>
+    Denne teksten skal framleis vere svart.
 </Container>
 ```
 
@@ -81,11 +80,11 @@ For å få få raud tekst på `p`-elementet kan vi gjere slik:
 
 ```typescript
 const Container = styled.div`
-  color: black;
+    color: black;
 
-  p {
-    color: red;
-  }
+    p {
+        color: red;
+    }
 `;
 ```
 
@@ -93,11 +92,11 @@ Med rein CSS ville dette sett slik ut:
 
 ```css
 div {
-  color: black;
+    color: black;
 }
 
 div p {
-  color: red;
+    color: red;
 }
 ```
 
@@ -129,10 +128,10 @@ Vi bruker teiknet `&` for å referere til gjeldande komponent.
   &:hover {
     // Rett ut understrek
   }
-`
+`;
 ```
-</details>
 
+</details>
 
 <br>
 
@@ -159,7 +158,7 @@ Ein media query som ser på skjermstorleik kan sjå slik ut:
 
 ```css
 @media (min-width: 40rem) {
-  /* some styling here */
+    /* some styling here */
 }
 ```
 
@@ -227,9 +226,9 @@ Sidan vi bruker TypeScript må vi definere forma på `props`-objektet til den st
 Det kan for eksempel sjå slik ut:
 
 ```typescript
-styled.div<{someProp: SomeType, anotherProp: AnotherType}>`
-  // styling here
-`
+styled.div<{ someProp: SomeType; anotherProp: AnotherType }>`
+    // styling here
+`;
 ```
 
 </details>
@@ -317,10 +316,10 @@ Lag ein styled component som wrappar `LikeButton`
 <summary>Hint 3</summary>
 
 ```typescript
-import Component from 'componentLocation/component'
+import Component from "componentLocation/component";
 
 const SomeComponent = styled(Component)`
-  // styling here
+    // styling here
 `;
 ```
 
@@ -344,11 +343,9 @@ Det vi kallar "props" i JSX til vert kalla "attributes" når dei skal sendast vi
 <details>
 <summary>Hint 2</summary>
 
-Les om `attrs` i dokumentasjonen til Styled Components:  https://styled-components.com/docs/basics#attaching-additional-props
+Les om `attrs` i dokumentasjonen til Styled Components: https://styled-components.com/docs/basics#attaching-additional-props
 
 </details>
-
-
 
 <br>
 <details>
