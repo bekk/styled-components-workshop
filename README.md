@@ -52,7 +52,7 @@ styled.h1`
 
 ### Oppgave 2 - Selectorer
 
-a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
+#### a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
 
 <details>
 <summary>Hint 1</summary>
@@ -121,7 +121,7 @@ Vi bruker teiknet `&` for å referere til gjeldande komponent
 
 </details>
 
-b) Media queries  
+#### b) Media queries  
 Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
 
 Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
@@ -189,7 +189,7 @@ Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan en
 
 Test løysinga di ved å sende inn for eksempel `COLORS.LIME_200` som bakgrunnsfarge på plantekorta.
 
-Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?
+#### Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?
 
 <br>
 <details>
@@ -256,7 +256,8 @@ Slik som i oppgåve 2a må vi sende inn ein prop til Button, definere type for d
 
 </details>
 
-b) I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med hvit bakgrunn.
+#### b) Justere farge basert på variant
+I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med hvit bakgrunn.
 
 <br>
 <details>
@@ -367,7 +368,9 @@ Ta i bruk en ThemeProvider rundt knappen
 
 </details>
 
-b) Nå ønsker vi at alle knapper som ikke bruker themet skal få fargen "palevioletred".
+#### b) Gi knapper en Default farge
+
+Nå ønsker vi at alle knapper som ikke bruker themet skal få fargen "palevioletred".
 
 <details>
 <summary>Hint</summary>
@@ -376,4 +379,6 @@ Ta i bruk `defaultProps` på knappen.
 
 </details>
 
-Mer tid ? : Les mer her om [Hvordan bruke ThemeProvider for å bytte mellom forskjellige temar](https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/)
+#### Mer tid ? 
+
+Les mer her om [Hvordan bruke ThemeProvider for å bytte mellom forskjellige temar](https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/)
