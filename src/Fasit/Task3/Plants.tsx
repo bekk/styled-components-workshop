@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { plants } from "../Data/Plants";
-import { BORDER_RADIUS } from "../StyleTokens/borderRadius";
-import { COLORS } from "../StyleTokens/colors";
-import { SHADOW } from "../StyleTokens/shadow";
-import { Plant as PlantType } from "../Data/Plants";
-import { LikeButton } from "../Components/LikeButton";
+import { plants } from "../../Data/Plants";
+import { BORDER_RADIUS } from "../../StyleTokens/borderRadius";
+import { COLORS } from "../../StyleTokens/colors";
+import { SHADOW } from "../../StyleTokens/shadow";
+import { Plant as PlantType } from "../../Data/Plants";
+import { LikeButton } from "../../Components/LikeButton";
 
 const Container = styled.div`
     display: flex;
@@ -38,7 +38,7 @@ export const Plant = ({ plant, backgroundColor = COLORS.WHITE }: Props) => {
         </Card>
     );
 };
-export const PlantsWithBackgoundColor = () => {
+export const Plants = () => {
     return (
         <Container>
             {plants.map((plant) => (

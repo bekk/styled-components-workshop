@@ -1,8 +1,9 @@
 import styled, { ThemeProvider } from "styled-components";
+import { COLORS } from "../../StyleTokens/colors";
 const Button = styled.button`
-    color: ${(props) => props.theme.fg};
-    border: 2px solid ${(props) => props.theme.fg};
-    background: ${(props) => props.theme.bg};
+    color: ${(props) => props.theme.color};
+    border: 2px solid ${(props) => props.theme.color};
+    background: ${(props) => props.theme.background};
 
     font-size: 1em;
     margin: 1em;
@@ -10,10 +11,9 @@ const Button = styled.button`
     border-radius: 3px;
 `;
 
-// Define our `fg` and `bg` on the theme
 const theme = {
-    fg: "palevioletred",
-    bg: "white",
+    color: COLORS.BLUE_500,
+    background: "white",
 };
 
 interface Props {
