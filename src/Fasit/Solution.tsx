@@ -1,11 +1,11 @@
 import { Task1 } from "./Task1";
 import { Task2a } from "./Task2a";
 import { Task2b } from "./Task2b";
-import { Task3a } from "./Task3a";
-import { Task3b } from "./Task3b";
+import { Task3a } from "./Task3/Task3a";
+import { Task3b } from "./Task3/Task3b";
 import { Task4a } from "./Task4a/Task4a";
 import { Task5a } from "./Task5a/Task5a";
-import { Task6 } from "./Task6";
+import { Task6 } from "./Task6/Task6";
 
 export const Solution = () => {
     // return <Task1 />;

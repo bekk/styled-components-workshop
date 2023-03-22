@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { ThemeButton } from "../Components/ThemeButton";
-import { PlantsWithBackgoundColor } from "./PlantsWithBackgoundColor";
+import { ThemeButton } from "./ThemeButton";
+import { Plants } from "./Plants";
 const Heading = styled.h1`
     font-size: 3rem;
     font-weight: bold;
@@ -14,7 +14,7 @@ export const Task6 = () => (
         <header>
             <Heading>Plant World (Solution)</Heading>
         </header>
-        <PlantsWithBackgoundColor />
+        <Plants />
         <ThemeButton buttonText={"Show More"} />
     </>
 );

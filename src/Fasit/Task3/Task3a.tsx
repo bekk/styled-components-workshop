@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PlantsWithBackgoundColor } from "./PlantsWithBackgoundColor";
+import { Plants } from "./Plants";
 const Heading = styled.h1`
     font-size: 3rem;
     font-weight: bold;
@@ -12,7 +12,7 @@ export const Task3a = () => {
             <header>
                 <Heading>Plant World (Solution)</Heading>
             </header>
-            <PlantsWithBackgoundColor />
+            <Plants />
         </>
     );
 };
