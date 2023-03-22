@@ -164,7 +164,10 @@ Den fancy enkle måten å gjere det på
 
 ### Oppgave 3 - Ta inn props i komponent
 
-a) Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
+a) Ta i bruk prop'en "backgroundColor"
+Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
+
+Test løysinga di ved å sende inn for eksempel `COLORS.LIME_200` som bakgrunnsfarge på plantekorta.
 
 Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?
 
@@ -172,13 +175,40 @@ Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?
 <details>
 <summary>Hint 1</summary>
 
+For å kunne bruke verdien av backgroundColor må den sendast vidare frå `Plant` til `Card`. Dette gjer vi på same måte som med props i vanlege React-komponentar.
+
+</details>
+
+<br>
+<details>
+<summary>Hint 2</summary>
+Når vi sendar `backgroundColor` inn i `Card`-elementet i JSX vil editoren vår klage over at den ikkje er ein gyldig prop. 
+
+Sidan vi bruker TypeScript må vi definere forma på `props`-objektet til den styla komponenten.
+
+Det kan for eksempel sjå slik ut:  
 ```
-const Something =styled.div<{size: string}>`
-  width: ${(props) => props.size}rem;
+styled.div<{someProp: SomeType, anotherProp: AnotherType}>`
+  // styling here
 `
 ```
 
 </details>
+
+<br>
+<details>
+<summary>Hint 3</summary>
+Vi har sendt backgroundColor inn i komponenten og definert typen av den – men korleis får vi eigentleg tak i sjølve verdien av props?
+
+`{someProp: SomeType, anotherProp: AnotherType}`-objektet frå hint 2 heiter eigentleg "props". For å hente ut `someProp` gjer vi slik inne i template stringen:
+
+```
+  someCSSProperty: ${props => props.someProp};
+```
+
+</details>
+
+<br>
 
 b) I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med vit bakgrunn.
 
