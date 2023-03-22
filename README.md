@@ -12,10 +12,8 @@ Naviger til root-folderen ved å kjøre cd styled-components-workshop.
 Start appen ved å kjøre `npm install` og deretter `npm run start`.  
 Åpne koden i din favoritteditor, naviger til src/App og følg instruksjonene derifra!
 
-
 <details>
 <summary>Hint</summary>
-
 
 </details>
 
@@ -52,11 +50,9 @@ styled.h1`
 
 </details>
 
-
 ### Oppgave 2 - Selectorer
 
-#### a) Vi vil at når du peiker på overskrifta så retter understreken seg ut  
-
+a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
 
 <details>
 <summary>Hint 1</summary>
@@ -65,6 +61,7 @@ I styled-components kan du nøste css-selectorar. Nøstinga i Styled components 
 
 Døme:  
 Vi har følgjande JSX-layout i ein komponent:
+
 ```
 <Container className="sc-container">
   <p>Vi vil at denne teksten skal bli raud</p>
@@ -77,22 +74,21 @@ For å få få raud tekst på `p`-elementet kan vi gjere slik:
 ```
 const Container = styled.div`
   color: black;
-  
+
   p {
     color: red;
   }
 `;
 ```
 
-
-Med rein CSS ville dette sett slik ut: 
+Med rein CSS ville dette sett slik ut:
 
 ```
 div {
   color: black;
 }
 
-div p { 
+div p {
   color: red;
 }
 ```
@@ -100,9 +96,10 @@ div p {
 <br>
 
 Nokre fordelar med at ein kan nøste selectorar i styled components:
-- Du slepp repetere selectorar
-- Det er lett å samle ulike tilstandar for ein komponent på same stad
-- Du kan manipulere innhaldet i komponentar du ikkje har laga sjølv
+
+-   Du slepp repetere selectorar
+-   Det er lett å samle ulike tilstandar for ein komponent på same stad
+-   Du kan manipulere innhaldet i komponentar du ikkje har laga sjølv
 
 </details>
 
@@ -124,9 +121,13 @@ Vi bruker teiknet `&` for å referere til gjeldande komponent
 
 </details>
 
+#### b) Media queries
 
-#### b) Media queries  
-Slik det ser ut no vert tittelen på sida litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
+# Slik det ser ut no vert tittelen på sida litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
+
+b) Media queries  
+Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
+
 Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
 
 Gjerne tenk mobile-first.
@@ -147,11 +148,10 @@ Ein media query som ser på skjermstorleik kan sjå slik ut:
 ```
 @media (min-width: 40rem) {
   // some styling here
-} 
+}
 ```
 
 </details>
-
 
 <br>
 <details>
@@ -168,7 +168,7 @@ Dette gjer at du kan bruke dei forhandsdefinerte breakpointsa vi har laga inne i
 <details>
 <summary>Hint 4</summary>
 Sidan vi kan blande inn TypeScript i koden vår har vi juksa litt og laga klart nokre konstantar for "tabletAndUp" og 
-`tabletAndUp` og `desktopAndUp`. Desse er alias for `@media (min-width: ${someBreakpointValue})`. 
+`tabletAndUp` og `desktopAndUp`. Desse er alias for `@media (min-width: ${someBreakpointValue})`.
 
 For å bruke desse brukar du `tabletAndUp` på same måte som du ville brukt ein selector:
 
@@ -177,7 +177,7 @@ For å bruke desse brukar du `tabletAndUp` på same måte som du ville brukt ein
 
   tabletAndUp {
     // some styling here
-  } 
+  }
 
 ```
 
@@ -185,10 +185,10 @@ Fordelen med dette er at det trengst litt mindre tenking for å lese at denne st
 
 </details>
 
-
 ### Oppgave 3 - Ta inn props i komponent
 
 #### a) Ta i bruk prop'en "backgroundColor"
+
 Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan endre bakgrunnsfargen på kortet basert på verdien av backgroundColor.
 
 Test løysinga di ved å sende inn for eksempel `COLORS.LIME_200` som bakgrunnsfarge på plantekorta.
@@ -206,11 +206,12 @@ For å kunne bruke verdien av backgroundColor må den sendast vidare frå `Plant
 <br>
 <details>
 <summary>Hint 2</summary>
-Når vi sendar `backgroundColor` inn i `Card`-elementet i JSX vil editoren vår klage over at den ikkje er ein gyldig prop. 
+Når vi sendar `backgroundColor` inn i `Card`-elementet i JSX vil editoren vår klage over at den ikkje er ein gyldig prop.
 
 Sidan vi bruker TypeScript må vi definere forma på `props`-objektet til den styla komponenten.
 
-Det kan for eksempel sjå slik ut:  
+Det kan for eksempel sjå slik ut:
+
 ```
 styled.div<{someProp: SomeType, anotherProp: AnotherType}>`
   // styling here
@@ -239,12 +240,14 @@ Vi har sendt backgroundColor inn i komponenten og definert typen av den – men 
 I components-mappa finn du komponenten Buttons som rendrar to Buttons. Vi vil at dei skal få ulik styling basert på kva variant vi sender inn som prop.
 
 PRIMARY
- - tekst: `COLORS.BLUE_900`
- - bakgrunn: `COLORS.BLUE_500`  
+
+-   tekst: `COLORS.BLUE_900`
+-   bakgrunn: `COLORS.BLUE_500`
 
 Andre variantar
- - tekst: `COLORS.WHITE`
- - bakgrunn: `palevioletred`
+
+-   tekst: `COLORS.WHITE`
+-   bakgrunn: `palevioletred`
 
 Du finn ein enum for variantar i `/StyleTokens/variants.ts`
 
@@ -257,7 +260,7 @@ Slik som i oppgåve 2a må vi sende inn ein prop til Button, definere type for d
 
 </details>
 
-
+b) I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med hvit bakgrunn.
 
 <br>
 <details>
@@ -266,7 +269,6 @@ Slik som i oppgåve 2a må vi sende inn ein prop til Button, definere type for d
 Sidan vi skal ha lik styling for alle andre variantar enn PRIMARY kan vi bruke ein [ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) til å velje kva farge som skal brukast, basert på verdien til prop-en du sendte inn til Button.
 
 </details>
-
 
 ### Oppgave 4 - Style en eksisterende komponent
 
@@ -280,7 +282,7 @@ Denne oppgåva skal løysast utan å endre koden i `LikeButton`.
 <details>
 <summary>Hint</summary>
 Lag ein styled component som wrappar `LikeButton`
-</details>  
+</details>
 
 <br>
 <details>
@@ -307,12 +309,12 @@ const SomeComponent = styled(Component)`
 </details>
 
 #### b) Overskrive ein prop
+
 Vi vil at deleknappen alltid skal vere Button size="small", men vil slippe å skrive det hver gang den brukes. Kan du fikse dette?
 
-
 ### Oppgave 5 - Lag din eigen komponent
-I denne oppgåva skal du få gjere alt sjølv.
 
+I denne oppgåva skal du få gjere alt sjølv.
 
 #### a) Lag ein "tag"-komponent
 
@@ -323,21 +325,22 @@ Outputten av komponenten i DOMen skal vere noko liknande dette:
 
 ```html
 <!-- HTML-->
-<span class="sc-some-generated-classname some-other-hash">Some tag text here</span>
+<span class="sc-some-generated-classname some-other-hash"
+    >Some tag text here</span
+>
 ```
 
 ```css
 /* CSS */
 .some-other-hash {
-  background: #ecfccb;
-  border: 1px solid #65a30d;
-  color: black;
-  padding: 0.125rem 0.75rem;
-  border-radius: 2px;
-  width: fit-content;
+    background: #ecfccb;
+    border: 1px solid #65a30d;
+    color: black;
+    padding: 0.125rem 0.75rem;
+    border-radius: 2px;
+    width: fit-content;
 }
 ```
-
 
 <br>
 
@@ -349,11 +352,11 @@ Alle Watertags skal ha teksten "Water: " og så valfri tekst ein kan sende inn i
 
 WaterTag skal ha denne stylinga annleis enn Tag:
 bakgrunnsfarge: `BLUE_200`  
-border: `BLUE_600`  
+border: `BLUE_600`
 
+### Oppgave 5 - Lag din eigen komponent - og style den utanfrå
 
 Lykke til.
-
 
 <details>
 <summary>Hint</summary>
@@ -361,23 +364,33 @@ du må feilsøke, hehe
 
 </details>
 
+### Oppgave 6 - Theme Provider
 
-
-### Oppgave 6 - Theme
-
-Ta i bruk Theme
+Ved å bruke ThemeProvider kan vi wrappe in komponenter og dermed raskt sette opp flere tilpassede temaer.
+Lag et theme som har fargen COLORS.COLORS.BLUE_500 og hvit bakgrundsfarge, bruk tema for å sette farge på knapper plasser disse knappene under alle plantekortene.
 
  <details>
 <summary>Hint</summary>
 
-  Wrappe knappen med en ThemeProvider
+Ta i bruk en ThemeProvide rundt knappen
 
 ```
 <ThemeProvider></ThemeProvider>
 
 ```
 
+b) Nå ønsker vi at alle knapper som ikke bruker themet skal få fargen "palevioletred".
+
+<details>
+<summary>Hint</summary>
+```
+Ta i bruk defaultProps
+
+```
+<details>
+<summary>Les mer her om hvordan man kan bruke ThemeProvider for å bytte mellom forskjellige theme </summary>
+
+https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/
+
 </details>
-
-
-
+```
