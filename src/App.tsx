@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styled from "styled-components";
 import "./App.css";
-import { Oppgaver } from "./Oppgaver/Oppgaver";
-import { Solution } from "./Fasit/Solution";
+import { Oppgaver } from "./Tasks/Oppgaver";
+import { Solution } from "./Solutions/Solution";
 import { COLORS } from "./StyleTokens/colors";
 
 const Container = styled.div`
