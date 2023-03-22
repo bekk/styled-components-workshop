@@ -121,10 +121,6 @@ Vi bruker teiknet `&` for å referere til gjeldande komponent
 
 </details>
 
-#### b) Media queries
-
-# Slik det ser ut no vert tittelen på sida litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
-
 b) Media queries  
 Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
 
