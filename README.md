@@ -1,25 +1,27 @@
 # Styled components workshop
 
-Dette er en workshop for deg som vil lære Styled Components rammeverket for React. Workshopen består av et sett med oppgaver, med gode forklaringer etter hver oppgave.
+Dette er ein workshop for deg som vil lære å bruke rammeverket Styled Components for React. Workshoppen tek utgangspunkt i at du har grunnleggande kjenskap til React, TypeScript og CSS.
 
-Styled Components dokumentasjon som du kan lese: https://styled-components.com/
+Workshopen består av eit sett med oppgåver med gode forklaringar etter kvar oppgave. Oppgåvene har hint som kan hjelpe deg på vegen. Det finst også løysingsforslag i mappa "Solutions". Om du vil sjå løysingsforslaga i nettlesaren kommenterer du inn rett komponent i `Solutions.tsx` og huker av for "Vis fasit" i nettlesaren. "Vis fasit" let deg toggle mellom arbeidet ditt og fasiten.
+
+[Styled Components sin dokumentasjon](https://styled-components.com/) kan også vere eit godt verktøy om du står fast. 
+
+_Finn du bugs eller skrivefeil i koden vår er det veldig hyggeleg om du opprettar ein PR ås kan vi gjere koden betre saman_
 
 ## Starte applikasjonen
 
-Last ned repoet ved å kjøre kommandoen:  
- `git clone https://github.com/bekk/styled-components-workshop/` i terminalen.  
-Naviger til root-folderen ved å kjøre cd styled-components-workshop.
-Start appen ved å kjøre `npm install` og deretter `npm run start`.  
-Åpne koden i din favoritteditor, naviger til src/App og følg instruksjonene derifra!
+Last ned repoet ved å køyre følgjande kommandoar i terminalen:  
+Klon repo: `git clone https://github.com/bekk/styled-components-workshop/`  
+Naviger til mappa: `cd styled-components-workshop`  
+Installer avhengigheiter: `npm install`  
+Start applikasjonen: `npm run start`  
 
-<details>
-<summary>Hint</summary>
+Åpne koden i din favoritteditor. Oppgåvene finn du her i README.
 
-</details>
 
-## Oppgaver
+## Oppgåver
 
-### Oppgave 1 - Lag din første Styled Component
+### Oppgåve 1 - Lag din første Styled Component
 
 Du skal style oversikrifta på sida. Trekk ut `h1` til ein Styled Component i same fil.
 
@@ -40,19 +42,25 @@ For å style understrek sjå: [text-decoration-style](https://developer.mozilla.
 <br>
 <details>
 <summary>Hint 2</summary>
+Om vi vil style ei lenke gjer vi slik:
 
-```
-styled.h1`
+```typescript
+styled.a`
   // styling her
 
 `;
 ```
 
+Du skal gjere det same, men for eit overskriftselement.
+
 </details>
+
+<br>
 
 ### Oppgave 2 - Selectorer
 
-#### a) Vi vil at når du peiker på overskrifta så retter understreken seg ut
+#### a) Rett ut understrek
+Vi vil at når du peiker på overskrifta så retter understreken seg ut. 
 
 <details>
 <summary>Hint 1</summary>
@@ -62,7 +70,7 @@ I styled-components kan du nøste css-selectorar. Nøstinga i Styled components 
 Døme:  
 Vi har følgjande JSX-layout i ein komponent:
 
-```
+```jsx
 <Container className="sc-container">
   <p>Vi vil at denne teksten skal bli raud</p>
   Denne teksten skal framleis vere svart.
@@ -71,7 +79,7 @@ Vi har følgjande JSX-layout i ein komponent:
 
 For å få få raud tekst på `p`-elementet kan vi gjere slik:
 
-```
+```typescript
 const Container = styled.div`
   color: black;
 
@@ -83,7 +91,7 @@ const Container = styled.div`
 
 Med rein CSS ville dette sett slik ut:
 
-```
+```css
 div {
   color: black;
 }
@@ -109,17 +117,24 @@ Nokre fordelar med at ein kan nøste selectorar i styled components:
 
 Nøsting fungerer også på pseudo-selektorar som :hover :first-child og :not().
 
-Vi bruker teiknet `&` for å referere til gjeldande komponent
+Vi bruker teiknet `&` for å referere til gjeldande komponent.
 
-```
+</details>
+
+<details>
+<summary>Løysing</summary>
+
+```typescript
 `
   &:hover {
     // Rett ut understrek
   }
 `
 ```
-
 </details>
+
+
+<br>
 
 #### b) Media queries
 
@@ -142,9 +157,9 @@ Styled components gjer det ikkje berre mogleg å nøste selectorar, men også [m
 <summary>Hint 2</summary>
 Ein media query som ser på skjermstorleik kan sjå slik ut:
 
-```
+```css
 @media (min-width: 40rem) {
-  // some styling here
+  /* some styling here */
 }
 ```
 
@@ -182,6 +197,8 @@ Fordelen med dette er at det trengst litt mindre tenking for å lese at denne st
 
 </details>
 
+<br>
+
 ### Oppgave 3 - Ta inn props i komponent
 
 #### a) Ta i bruk prop'en "backgroundColor"
@@ -209,7 +226,7 @@ Sidan vi bruker TypeScript må vi definere forma på `props`-objektet til den st
 
 Det kan for eksempel sjå slik ut:
 
-```
+```typescript
 styled.div<{someProp: SomeType, anotherProp: AnotherType}>`
   // styling here
 `
@@ -257,6 +274,8 @@ Slik som i oppgåve 2a må vi sende inn ein prop til Button, definere type for d
 
 </details>
 
+<br>
+
 #### b) Justere farge basert på variant
 
 I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med hvit bakgrunn.
@@ -268,6 +287,8 @@ I komponents mappa finner du en Button, vi ønsker at du bruker denne komponente
 Sidan vi skal ha lik styling for alle andre variantar enn PRIMARY kan vi bruke ein [ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) til å velje kva farge som skal brukast, basert på verdien til prop-en du sendte inn til Button.
 
 </details>
+
+<br>
 
 ### Oppgave 4 - Style en eksisterende komponent
 
@@ -295,7 +316,7 @@ Lag ein styled component som wrappar `LikeButton`
 <details>
 <summary>Hint 3</summary>
 
-```
+```typescript
 import Component from 'componentLocation/component'
 
 const SomeComponent = styled(Component)`
@@ -307,13 +328,47 @@ const SomeComponent = styled(Component)`
 
 </details>
 
+<br>
+
 #### b) Overskrive ein prop
 
-Vi vil at deleknappen alltid skal vere Button size="small", men vil slippe å skrive det hver gang den brukes. Kan du fikse dette?
+Vi vil at like-knappen alltid skal ha size="big" på korta våre, men vil slippe å skrive det hver gang den brukes. Kan du fikse dette utan å endre `LikeButton.tsx`?
+
+<br>
+<details>
+<summary>Hint 1</summary>
+Det vi kallar "props" i JSX til vert kalla "attributes" når dei skal sendast vidare til ein styla komponent.
+</details>
+
+<br>
+<details>
+<summary>Hint 2</summary>
+
+Les om `attrs` i dokumentasjonen til Styled Components:  https://styled-components.com/docs/basics#attaching-additional-props
+
+</details>
+
+
+
+<br>
+<details>
+<summary>Løysing</summary>
+
+```typescript
+const PlantLikeButton = styled(LikeButton).attrs({ size: "large" })`
+    color: ${COLORS.LIME_600};
+`;
+```
+
+</details>
+
+<br>
 
 ### Oppgave 5 - Lag din eigen komponent
 
 I denne oppgåva skal du få gjere alt sjølv.
+
+<br>
 
 #### a) Lag ein "tag"-komponent
 
@@ -359,6 +414,7 @@ border: `BLUE_600`
 Idé til korleis komponenten kan testast:  
 Legg på WaterTags i Plant-komponenten og bruk `water`-verdien til plantane som tekst i tagen.
 
+<br>
 
 ### Oppgave 6 - Theme Provider
 
