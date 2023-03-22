@@ -16,12 +16,19 @@ const theme = {
     background: "white",
 };
 
+Button.defaultProps = {
+    theme: {
+        color: "palevioletred",
+    },
+};
+
 interface Props {
     buttonText: string;
 }
 export const ThemeButton = ({ buttonText }: Props) => {
     return (
         <div>
+            <Button>Default knapp</Button>
             <ThemeProvider theme={theme}>
                 <Button>{buttonText}</Button>
                 <Button>{buttonText}</Button>
