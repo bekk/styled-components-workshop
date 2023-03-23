@@ -6,13 +6,13 @@ Workshopen består av eit sett med oppgåver med gode forklaringar etter kvar op
 
 [Styled Components sin dokumentasjon](https://styled-components.com/) kan også vere eit godt verktøy om du står fast.
 
-_Finn du bugs eller skrivefeil i koden vår er det veldig hyggeleg om du opprettar ein PR ås kan vi gjere koden betre saman_
+_Finn du bugs eller skrivefeil i koden vår er det veldig hyggeleg om du opprettar ein PR så kan vi gjere koden betre saman._
 
 ## Starte applikasjonen
 
 Last ned repoet ved å køyre følgjande kommandoar i terminalen:  
 Klon repo: `git clone https://github.com/bekk/styled-components-workshop/`  
-Naviger til mappa: `cd styled-components-workshop`  
+Naviger til prosjektet: `cd styled-components-workshop`  
 Installer avhengigheiter: `npm install`  
 Start applikasjonen: `npm run start`
 
@@ -61,6 +61,7 @@ Du skal gjere det same, men for eit overskriftselement.
 
 Vi vil at når du peiker på overskrifta så retter understreken seg ut.
 
+<br>
 <details>
 <summary>Hint 1</summary>
 
@@ -139,7 +140,7 @@ Vi bruker teiknet `&` for å referere til gjeldande komponent.
 
 Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
 
-Du finn breakpoints i `src/StyleTokens/breakpoints.ts`
+Du finn breakpoints i `src/StyleTokens/breakpoints.ts`.
 
 Gjerne tenk mobile-first.
 
@@ -169,7 +170,7 @@ Ein media query som ser på skjermstorleik kan sjå slik ut:
 <summary>Hint 3</summary>
 Styled components er basert på [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). Desse er notert med backticks (``). Template strings gjer at du kan veksle mellom å skrive "css" (tekststrengar) og JavaScript/TypeScript.
 
-For å veksle mellom css og typescript bruker du `${}` inne i template stringen.
+For å veksle mellom css og typescript bruker du `${}` inne i template-stringen.
 
 Dette gjer at du kan bruke dei forhandsdefinerte breakpointsa vi har laga inne i stylinga di.
 
@@ -180,6 +181,8 @@ Dette gjer at du kan bruke dei forhandsdefinerte breakpointsa vi har laga inne i
 <summary>Hint 4</summary>
 Sidan vi kan blande inn TypeScript i koden vår har vi juksa litt og laga klart nokre konstantar for "tabletAndUp" og 
 `tabletAndUp` og `desktopAndUp`. Desse er alias for `@media (min-width: ${someBreakpointValue})`.
+
+<br>
 
 For å bruke desse brukar du `tabletAndUp` på same måte som du ville brukt ein selector:
 
@@ -219,9 +222,7 @@ For å kunne bruke verdien av backgroundColor må den sendast vidare frå `Plant
 <br>
 <details>
 <summary>Hint 2</summary>
-Når vi sendar `backgroundColor` inn i `Card`-elementet i JSX vil editoren vår klage over at den ikkje er ein gyldig prop.
-
-Sidan vi bruker TypeScript må vi definere forma på `props`-objektet til den styla komponenten.
+Når vi sendar `backgroundColor` inn i `Card`-elementet i JSX vil editoren vår klage over at den ikkje er ein gyldig prop. Sidan vi bruker TypeScript må vi definere forma på `props`-objektet til den styla komponenten.
 
 Det kan for eksempel sjå slik ut:
 
@@ -274,12 +275,6 @@ Slik som i oppgåve 2a må vi sende inn ein prop til Button, definere type for d
 </details>
 
 <br>
-
-#### b) Justere farge basert på variant
-
-I komponents mappa finner du en Button, vi ønsker at du bruker denne komponenten og sender in en prop som setter fargen COLORS.BLUE_900 om det er en PrimaryKnapp med med bakgrunnsfargen COLORS.BLUE_500 eller sette fargen til palevioletred med hvit bakgrunn.
-
-<br>
 <details>
 <summary>Hint 2</summary>
 
@@ -299,8 +294,8 @@ Denne oppgåva skal løysast utan å endre koden i `LikeButton`.
 
 <br>
 <details>
-<summary>Hint</summary>
-Lag ein styled component som wrappar `LikeButton`
+<summary>Hint 1</summary>
+Lag ein styled component som wrappar `LikeButton`.
 </details>
 
 <br>
