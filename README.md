@@ -430,7 +430,7 @@ Legg til ein tag med teksten "Indoor plant" på alle korta i Plants.
 
 #### b) Lag ein custom-tag for "water"
 
-Vi har lyst på ein forhandslaga Tag for kor mykje vatn planten treng. Kall denne WaterTag.
+Vi har lyst på ein forhandslaga Tag for kor mykje vatn planten treng. Kall denne WaterTag. WaterTag skal vere ein React-komponent.
 
 Alle Watertags skal ha teksten "Water: " og så valfri tekst ein kan sende inn i komponenten, slik at ein ikkje treng skrive inn dette for kvar enkelt Tag.
 
@@ -441,16 +441,38 @@ border: `BLUE_600`
 Idé til korleis komponenten kan testast:  
 Legg på WaterTags i Plant-komponenten og bruk `water`-verdien til plantane som tekst i tagen.
 
+WaterTags
 
 I denne oppgåva må du sannsynlegvis feilsøke litt. Lykke til!
 
 <br>
 
 <details>
-<summary>Hint</summary>
+<summary>Hint 1</summary>
 
 Fungerer ikkje stylinga di sjølv om du har wrappa Tag i styled(Tag)?
-Dette problemet har Ingrid feilsøka i timevis fleire gonger. Hintet er å tenke på korleis styled components virkar, kva er det som gjer at stylinga ein har definert vert brukt på rett komponent i nettlesaren?
+Hintet er å tenke på korleis styled components virkar. Kva er det som gjer at stylinga ein har definert vert brukt på rett komponent i nettlesaren? Korleis får html-elementet den stylinga vi har sett med styled components?
+
+Denne oppgåva er vanskelegare enn den ser ut, Ingrid har sjølv brukt timevis på å feilsøke dette ute hos kunde. 
+
+</details>
+
+<br>
+<details>
+<summary>Hint 2</summary>
+
+Grunnen til at stylinga ikkje fungerer har med TypeScript å gjere.
+
+I rein JavaScript blir koden heilt lik når ein stylar ein React-komponent og ein Styled Component. Når vi har TypeScript i tillegg vert det litt annleis.
+
+</details>
+
+<br>
+<details>
+<summary>
+Hint 3
+</summary>
+Du manglar sannsynlegvis ein prop i Tag-komponenten din. 
 
 </details>
 
