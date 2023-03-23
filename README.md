@@ -30,6 +30,9 @@ Vi vil ha følgande styling:
 -   feit tekst (bold)
 -   bølgete understrek
 
+Relevante filer:  
+`Oppgaver.tsx`
+
 <br>
 <details>
 <summary>Hint 1</summary>
@@ -60,6 +63,10 @@ Du skal gjere det same, men for eit overskriftselement.
 #### a) Rett ut understrek
 
 Vi vil at når du peiker på overskrifta så retter understreken seg ut.
+
+Relevante filer:  
+`Oppgaver.tsx`
+
 
 <br>
 <details>
@@ -144,6 +151,11 @@ Du finn breakpoints i `src/StyleTokens/breakpoints.ts`.
 
 Gjerne tenk mobile-first.
 
+Relevante filer:  
+`/Tasks/Oppgaver.tsx`  
+`/StyleTokens/breakpoints.ts`  
+
+
 <br>
 <details>
 <summary>Hint 1</summary>
@@ -209,6 +221,12 @@ Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan en
 
 Test løysinga di ved å sende inn for eksempel `COLORS.LIME_200` som bakgrunnsfarge på plantekorta.
 
+
+Relevante filer:  
+`/Components/Plant.tsx`  
+`/StyleTokens/colors.ts`  
+
+
 _Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?_
 
 <br>
@@ -265,6 +283,12 @@ Andre variantar
 
 Du finn ein enum for variantar i `/StyleTokens/variants.ts`
 
+
+Relevante filer:  
+`/Components/Button.tsx`  
+`/StyleTokens/variants.ts`  
+
+
 <br>
 <details>
 <summary>Hint 1</summary>
@@ -288,9 +312,15 @@ Sidan vi skal ha lik styling for alle andre variantar enn PRIMARY kan vi bruke e
 
 #### a) Overskrive bakgrunnsfarge
 
-På plantekorta våre har vi ein "like"-knapp forma som eit hjarte (`LikeButton.tsx`). Vi vil at denne skal vere grøn på plantekorta våre (`Plant.tsx`), men den skal framleis vere raud om ein bruker den andre stadar.
+På plantekorta våre har vi ein "like"-knapp forma som eit hjarte (`LikeButton.tsx`). Vi vil at denne skal vere grøn på plantekorta våre (`Plant.tsx`), men den skal framleis vere rosa om ein bruker den andre stadar.
 
 Denne oppgåva skal løysast utan å endre koden i `LikeButton`.
+
+
+Relevante filer:  
+`/Components/Plant.tsx`  
+`/Components/LikeButton.tsx`  
+`/StyleTokens/colors.ts`
 
 <br>
 <details>
@@ -327,6 +357,11 @@ const SomeComponent = styled(Component)`
 #### b) Overskrive ein prop
 
 Vi vil at like-knappen alltid skal ha size="big" på korta våre, men vil slippe å skrive det hver gang den brukes. Kan du fikse dette utan å endre `LikeButton.tsx`?
+
+
+Relevante filer:  
+`/Components/Plant.tsx`  
+`/Components/LikeButton.tsx`  
 
 <br>
 <details>
