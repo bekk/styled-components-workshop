@@ -456,25 +456,26 @@ Dette problemet har Ingrid feilsøka i timevis fleire gonger. Hintet er å tenke
 
 ### Oppgave 6 - Theme Provider
 
-Ved å bruke ThemeProvider kan vi wrappe in komponenter og dermed raskt sette opp flere tilpassede temaer.
-Lag et theme som har fargen `BLUE_500` og `WHITE` som bakgrundsfarge, bruk tema for å sette farge på knapper plasser disse knappene under alle plantekortene.
+Ved å bruke ThemeProvider kan vi wrappe inn komponentar og dermed raskt setje opp fleire tilpassa tema.
+Lag et tema som har og `WHITE` som bakgrunnsfarge og `BLUE_500` for tekst og border. Bruk temaet til å setje farge på knappar og plasser dei under alle plantekorta.
 
 <br>
  <details>
 <summary>Hint</summary>
 
-Ta i bruk en ThemeProvider rundt knappen
+Ta i bruk ein ThemeProvider rundt knappen
 
 ```
-<ThemeProvider></ThemeProvider>
-
+<ThemeProvider>
+    // Knappen din her
+</ ThemeProvider>
 ```
 
 </details>
 
-#### b) Gi knapper en Default farge
+#### b) Gje knappar ein Default-farge
 
-Nå ønsker vi at alle knapper som ikke bruker themet skal få fargen "palevioletred".
+No ynskjer vi at alle knappar som ikkje bruker temaet skal få fargen "palevioletred".
 
 <br>
 <details>
@@ -484,6 +485,8 @@ Ta i bruk `defaultProps` på knappen.
 
 </details>
 
-#### Mer tid ?
+<br>
 
-Les mer her om [Hvordan bruke ThemeProvider for å bytte mellom forskjellige temar](https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/)
+#### Meir tid ?
+
+Les og gjer Pelumi Akintokun sin bloggpost/workshop om [korleis bruke ThemeProvider til å bytte mellom forskjellige tema](https://blog.logrocket.com/build-react-theme-switcher-app-styled-components/).
