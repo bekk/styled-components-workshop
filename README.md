@@ -147,7 +147,7 @@ Vi bruker teiknet `&` for å referere til gjeldande komponent.
 
 Tittelen på sida vart litt stor på mobil. Endre tekststorleiken slik at den er 2rem for mobil, og 3 rem på alt frå tablet og opp.
 
-Du finn breakpoints i `src/StyleTokens/breakpoints.ts`.
+Vi har laga klar verdiar for ulike skjermstorleikar (også kalla breakpoints) i fila `src/StyleTokens/breakpoints.ts`.
 
 Gjerne tenk mobile-first.
 
@@ -475,7 +475,7 @@ Ta i bruk ein ThemeProvider rundt knappen
 
 </details>
 
-<br>
+<br
 
 #### b) Gje knappar ein Default-farge
 
