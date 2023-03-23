@@ -454,6 +454,8 @@ Dette problemet har Ingrid feilsøka i timevis fleire gonger. Hintet er å tenke
 
 </details>
 
+<br>
+
 ### Oppgave 6 - Theme Provider
 
 Ved å bruke ThemeProvider kan vi wrappe inn komponentar og dermed raskt setje opp fleire tilpassa tema.
@@ -472,6 +474,8 @@ Ta i bruk ein ThemeProvider rundt knappen
 ```
 
 </details>
+
+<br>
 
 #### b) Gje knappar ein Default-farge
 
