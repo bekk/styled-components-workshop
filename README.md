@@ -412,7 +412,7 @@ I denne oppgåva må du sannsynlegvis feilsøke litt. Lykke til!
 <br>
 
 <details>
-<summary>Hint 2</summary>
+<summary>Hint</summary>
 
 Fungerer ikkje stylinga di sjølv om du har wrappa Tag i styled(Tag)?
 Dette problemet har Ingrid feilsøka i timevis fleire gonger. Hintet er å tenke på korleis styled components virkar, kva er det som gjer at stylinga ein har definert vert brukt på rett komponent i nettlesaren?
@@ -424,6 +424,7 @@ Dette problemet har Ingrid feilsøka i timevis fleire gonger. Hintet er å tenke
 Ved å bruke ThemeProvider kan vi wrappe in komponenter og dermed raskt sette opp flere tilpassede temaer.
 Lag et theme som har fargen `BLUE_500` og `WHITE` som bakgrundsfarge, bruk tema for å sette farge på knapper plasser disse knappene under alle plantekortene.
 
+<br>
  <details>
 <summary>Hint</summary>
 
@@ -440,6 +441,7 @@ Ta i bruk en ThemeProvider rundt knappen
 
 Nå ønsker vi at alle knapper som ikke bruker themet skal få fargen "palevioletred".
 
+<br>
 <details>
 <summary>Hint</summary>
 
