@@ -4,6 +4,7 @@ import { Task2b } from "./Task2b";
 import { Task3a } from "./Task3/Task3a";
 import { Task3b } from "./Task3/Task3b";
 import { Task4a } from "./Task4a/Task4a";
+import { Task4b } from "./Task4b/Task4b";
 import { Task5a } from "./Task5a/Task5a";
 import { Task5b } from "./Task5b/Task5b";
 import { Task6 } from "./Task6/Task6";
@@ -16,6 +17,7 @@ export const Solution = () => {
     // return <Task3a />;
     // return <Task3b />;
     // return <Task4a />;
+    // return <Task4b />;
     // return <Task5a />
     // return <Task5b />
     // return <Task6 />;
