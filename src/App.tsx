@@ -30,7 +30,7 @@ function App() {
                     checked={showSolution}
                     onChange={() => setShowSolution((prevState) => !prevState)}
                 />
-                <label htmlFor="showSolution">Vis fasit</label>
+                <label htmlFor="showSolution">Show solution</label>
             </ShowSolutionChecxbox>
             {showSolution ? <Solution /> : <Oppgaver />}
         </Container>
