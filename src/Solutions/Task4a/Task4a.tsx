@@ -21,7 +21,8 @@ const Heading = styled.h1`
 export const Task4a = () => (
     <>
         <header>
-            <Heading>Plant World (Solution)</Heading>
+            <Heading>Plant World</Heading>
+            <p>(Solution for task 4a)</p>
         </header>
         <Plants />
         <Buttons />

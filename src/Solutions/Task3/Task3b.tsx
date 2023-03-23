@@ -21,7 +21,8 @@ const Heading = styled.h1`
 export const Task3b = () => (
     <>
         <header>
-            <Heading>Plant World (Solution)</Heading>
+            <Heading>Plant World</Heading>
+            <p>(Solution for task 3b)</p>
         </header>
         <Plants />
         <Buttons /> {/* This component is added in task 3b */}

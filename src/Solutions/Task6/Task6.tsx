@@ -12,7 +12,8 @@ const Heading = styled.h1`
 export const Task6 = () => (
     <>
         <header>
-            <Heading>Plant World (Solution)</Heading>
+            <Heading>Plant World</Heading>
+            <p>(Solution for task 6a)</p>
         </header>
         <Plants />
         <ThemeButtons buttonText={"Show More"} />

@@ -68,3 +68,9 @@ h6 {
 #__next {
     isolation: isolate;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

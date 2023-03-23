@@ -30,7 +30,8 @@ export const Task5b = () => {
     return (
         <>
             <header>
-                <Heading>Plant World (Solution)</Heading>
+                <Heading>Plant World</Heading>
+                <p>(Solution for task 5b)</p>
             </header>
             <Container>
                 <Tag>Bright light</Tag>
