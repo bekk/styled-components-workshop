@@ -338,7 +338,7 @@ Det vi kallar "props" i JSX til vert kalla "attributes" når dei skal sendast vi
 <details>
 <summary>Hint 2</summary>
 
-Les om `attrs` i dokumentasjonen til Styled Components: https://styled-components.com/docs/basics#attaching-additional-props
+Les om `attrs` i dokumentasjonen til Styled Components: https://styled-components.com/docs/basics#attaching-additional-props.
 
 </details>
 
@@ -406,7 +406,18 @@ border: `BLUE_600`
 Idé til korleis komponenten kan testast:  
 Legg på WaterTags i Plant-komponenten og bruk `water`-verdien til plantane som tekst i tagen.
 
+
+I denne oppgåva må du sannsynlegvis feilsøke litt. Lykke til!
+
 <br>
+
+<details>
+<summary>Hint 2</summary>
+
+Fungerer ikkje stylinga di sjølv om du har wrappa Tag i styled(Tag)?
+Dette problemet har Ingrid feilsøka i timevis fleire gonger. Hintet er å tenke på korleis styled components virkar, kva er det som gjer at stylinga ein har definert vert brukt på rett komponent i nettlesaren?
+
+</details>
 
 ### Oppgave 6 - Theme Provider
 
