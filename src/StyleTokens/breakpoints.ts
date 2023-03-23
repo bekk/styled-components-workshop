@@ -1,3 +1,8 @@
+/**
+ * Breakpoints er eit sett forhandsdefinerte verdiar for skjermstorleik
+ * der nettlesaren skal vise ulik styling, for eksempel for mobilar og desktop.
+ * "Knekkpunktet" er den minste verdien som stylinga skal gjelde frå.
+ * */
 export enum BREAKPOINTS {
     MOBILE = "30rem",
     TABLET = "48rem",

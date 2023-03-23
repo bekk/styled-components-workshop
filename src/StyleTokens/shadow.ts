@@ -1,3 +1,7 @@
+/**
+ * Shadow kan brukast til å setje box-shadow på html-element
+ * slik at ein får ulik skuggelegging mellom elementet og bakgrunnen
+ * */
 export enum SHADOW {
     XSMALL = "0 1px 2px 0 rgba(0, 0, 0, 0.12)",
     SMALL = "0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1)",
