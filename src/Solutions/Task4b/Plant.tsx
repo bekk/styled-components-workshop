@@ -15,7 +15,7 @@ const Card = styled.div<{ backgroundColor: COLORS }>`
 `;
 
 /* A new component wrapping LikeButton */
-const PlantLikeButton = styled(LikeButton).attrs({size: "large"})`
+const PlantLikeButton = styled(LikeButton).attrs({ size: "large" })`
     color: ${COLORS.LIME_600};
 `;
 

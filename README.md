@@ -67,7 +67,6 @@ Vi vil at når du peiker på overskrifta så retter understreken seg ut.
 Relevante filer:  
 `Oppgaver.tsx`
 
-
 <br>
 <details>
 <summary>Hint 1</summary>
@@ -153,8 +152,7 @@ Gjerne tenk mobile-first.
 
 Relevante filer:  
 `/Tasks/Oppgaver.tsx`  
-`/StyleTokens/breakpoints.ts`  
-
+`/StyleTokens/breakpoints.ts`
 
 <br>
 <details>
@@ -221,11 +219,9 @@ Komponenten Plant har ein prop "backgroundColor". Ta denne i bruk så ein kan en
 
 Test løysinga di ved å sende inn for eksempel `COLORS.LIME_200` som bakgrunnsfarge på plantekorta.
 
-
 Relevante filer:  
 `/Components/Plant.tsx`  
-`/StyleTokens/colors.ts`  
-
+`/StyleTokens/colors.ts`
 
 _Bonusoppgave: Klarer du å farge annakvart kort grønt og grått?_
 
@@ -283,11 +279,9 @@ Andre variantar
 
 Du finn ein enum for variantar i `/StyleTokens/variants.ts`
 
-
 Relevante filer:  
 `/Components/Button.tsx`  
-`/StyleTokens/variants.ts`  
-
+`/StyleTokens/variants.ts`
 
 <br>
 <details>
@@ -315,7 +309,6 @@ Sidan vi skal ha lik styling for alle andre variantar enn PRIMARY kan vi bruke e
 På plantekorta våre har vi ein "like"-knapp forma som eit hjarte (`LikeButton.tsx`). Vi vil at denne skal vere grøn på plantekorta våre (`Plant.tsx`), men den skal framleis vere rosa om ein bruker den andre stadar.
 
 Denne oppgåva skal løysast utan å endre koden i `LikeButton`.
-
 
 Relevante filer:  
 `/Components/Plant.tsx`  
@@ -358,10 +351,9 @@ const SomeComponent = styled(Component)`
 
 Vi vil at like-knappen alltid skal ha size="big" på korta våre, men vil slippe å skrive det hver gang den brukes. Kan du fikse dette utan å endre `LikeButton.tsx`?
 
-
 Relevante filer:  
 `/Components/Plant.tsx`  
-`/Components/LikeButton.tsx`  
+`/Components/LikeButton.tsx`
 
 <br>
 <details>
@@ -453,7 +445,7 @@ I denne oppgåva må du sannsynlegvis feilsøke litt. Lykke til!
 Fungerer ikkje stylinga di sjølv om du har wrappa Tag i styled(Tag)?
 Hintet er å tenke på korleis styled components virkar. Kva er det som gjer at stylinga ein har definert vert brukt på rett komponent i nettlesaren? Korleis får html-elementet den stylinga vi har sett med styled components?
 
-Denne oppgåva er vanskelegare enn den ser ut, Ingrid har sjølv brukt timevis på å feilsøke dette ute hos kunde. 
+Denne oppgåva er vanskelegare enn den ser ut, Ingrid har sjølv brukt timevis på å feilsøke dette ute hos kunde.
 
 </details>
 
@@ -472,7 +464,7 @@ I rein JavaScript blir koden heilt lik når ein stylar ein React-komponent og ei
 <summary>
 Hint 3
 </summary>
-Du manglar sannsynlegvis ein prop i Tag-komponenten din. 
+Du manglar sannsynlegvis ein prop i Tag-komponenten din.
 
 </details>
 
